@@ -15,8 +15,26 @@ public class PlayerMovment : MonoBehaviour
     private bool isGrounded = false;
     private bool isDead = false;
 
+    private Vector3 pickUpScale;
+    void Start()
+    {
+        pickUpScale = pickUpText.gameObject.transform.localScale;
+
+    }
+
     void Update()
     {
+        #region Turning the text with the player
+        if (transform.localScale.x < 0)
+            if (pickUpScale.x >0)
+                pickUpScale = new Vector3(-pickUpScale.x, pickUpScale.y, pickUpScale.z);
+        else if (transform.localScale.x > 0)
+            if(pickUpScale.x <0)
+            pickUpScale = new Vector3(-pickUpScale.x, pickUpScale.y, pickUpScale.z);
+        // Apply the new scale to the transform
+        pickUpText.gameObject.transform.localScale = pickUpScale;
+        #endregion
+
         if (isDead) return;
         float moveInput = Input.GetAxisRaw("Horizontal");
         float speed = isCrawling ? crawlSpeed : moveSpeed;
@@ -27,7 +45,7 @@ public class PlayerMovment : MonoBehaviour
             transform.localScale = new Vector3(Mathf.Sign(moveInput), 1, 1);
         }
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetButtonDown("Jump") && IsGrounded() && !isCrawling)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             animator.SetTrigger("Jump");
@@ -37,22 +55,21 @@ public class PlayerMovment : MonoBehaviour
         {
             isCrawling = !isCrawling;
         }
-        var pickUpScale = pickUpText.gameObject.transform.localScale;
 
         Debug.Log("Move Input: " + moveInput);
         if (Mathf.Abs(moveInput) == 0)
         {
             animator.SetFloat("Speed", -1.0f);
-            pickUpScale = new Vector3(-0.01f, pickUpScale.y, pickUpScale.z);
+            
         }
         else
         {
             animator.SetFloat("Speed", Mathf.Abs(moveInput));
-            pickUpScale = new Vector3(0.01f, pickUpScale.y, pickUpScale.z);
+
+           
         }
 
-        // Apply the new scale to the transform
-        pickUpText.gameObject.transform.localScale = pickUpScale;
+  
 
         animator.SetBool("IsCrawling", isCrawling);
         //animator.SetBool("IsGrounded", IsGrounded());
