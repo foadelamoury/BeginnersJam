@@ -1,8 +1,10 @@
 using UnityEngine;
+using TMPro;
 
 public class PlayerMovment : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public TextMeshProUGUI pickUpText;
     public float crawlSpeed = 2f;
     public float jumpForce = 10f;
     public Animator animator;
@@ -35,16 +37,23 @@ public class PlayerMovment : MonoBehaviour
         {
             isCrawling = !isCrawling;
         }
+        var pickUpScale = pickUpText.gameObject.transform.localScale;
 
         Debug.Log("Move Input: " + moveInput);
         if (Mathf.Abs(moveInput) == 0)
         {
             animator.SetFloat("Speed", -1.0f);
+            pickUpScale = new Vector3(-0.01f, pickUpScale.y, pickUpScale.z);
         }
         else
         {
             animator.SetFloat("Speed", Mathf.Abs(moveInput));
+            pickUpScale = new Vector3(0.01f, pickUpScale.y, pickUpScale.z);
         }
+
+        // Apply the new scale to the transform
+        pickUpText.gameObject.transform.localScale = pickUpScale;
+
         animator.SetBool("IsCrawling", isCrawling);
         //animator.SetBool("IsGrounded", IsGrounded());
 
