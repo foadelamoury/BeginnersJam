@@ -16,6 +16,8 @@ public class PlayerMovment : MonoBehaviour
     private bool isDead = false;
 
     private Vector3 pickUpScale;
+    bool xPosFlipped = false;
+
     void Start()
     {
         pickUpScale = pickUpText.gameObject.transform.localScale;
@@ -26,13 +28,26 @@ public class PlayerMovment : MonoBehaviour
     {
         #region Turning the text with the player
         if (transform.localScale.x < 0)
-            if (pickUpScale.x >0)
-                pickUpScale = new Vector3(-pickUpScale.x, pickUpScale.y, pickUpScale.z);
+        {
+            xPosFlipped = true;
+        }
         else if (transform.localScale.x > 0)
-            if(pickUpScale.x <0)
+        {
+            xPosFlipped = false;
+        }
+
+        if (xPosFlipped && pickUpScale.x > 0)
+        {
             pickUpScale = new Vector3(-pickUpScale.x, pickUpScale.y, pickUpScale.z);
+        }
+        else if (!xPosFlipped && pickUpScale.x < 0)
+        {
+            pickUpScale = new Vector3(-pickUpScale.x, pickUpScale.y, pickUpScale.z);
+        }
+
         // Apply the new scale to the transform
         pickUpText.gameObject.transform.localScale = pickUpScale;
+
         #endregion
 
         if (isDead) return;
