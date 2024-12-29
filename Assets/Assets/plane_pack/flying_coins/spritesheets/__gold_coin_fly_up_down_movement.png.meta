@@ -497,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      __gold_coin_fly_up_down_movement_0: -7758485649242646467
+      __gold_coin_fly_up_down_movement_1: 4746172147020860070
+      __gold_coin_fly_up_down_movement_10: 14932078604331031
+      __gold_coin_fly_up_down_movement_11: -5127653634393301647
+      __gold_coin_fly_up_down_movement_12: 7546138812655160646
+      __gold_coin_fly_up_down_movement_13: -937045405384966684
+      __gold_coin_fly_up_down_movement_14: 5686243086571918910
+      __gold_coin_fly_up_down_movement_2: -4176570650013467230
+      __gold_coin_fly_up_down_movement_3: -1890140792894649265
+      __gold_coin_fly_up_down_movement_4: 2995585294764421180
+      __gold_coin_fly_up_down_movement_5: 7604289055770940203
+      __gold_coin_fly_up_down_movement_6: -6021768091291389049
+      __gold_coin_fly_up_down_movement_7: 5777059459114730129
+      __gold_coin_fly_up_down_movement_8: 1260568296312155818
+      __gold_coin_fly_up_down_movement_9: 3593383666978235214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

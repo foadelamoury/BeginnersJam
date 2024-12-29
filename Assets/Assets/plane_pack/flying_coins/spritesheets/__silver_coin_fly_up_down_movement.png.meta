@@ -497,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      __silver_coin_fly_up_down_movement_0: 120331457699558356
+      __silver_coin_fly_up_down_movement_1: 2293721673328150102
+      __silver_coin_fly_up_down_movement_10: -1274508694514824090
+      __silver_coin_fly_up_down_movement_11: 2899608851394683972
+      __silver_coin_fly_up_down_movement_12: 5258615757185298352
+      __silver_coin_fly_up_down_movement_13: 4077887046557567774
+      __silver_coin_fly_up_down_movement_14: 3825325934362522140
+      __silver_coin_fly_up_down_movement_2: 2134422616189885360
+      __silver_coin_fly_up_down_movement_3: -4867916681470958500
+      __silver_coin_fly_up_down_movement_4: 6894282709686411892
+      __silver_coin_fly_up_down_movement_5: 7082407063713429503
+      __silver_coin_fly_up_down_movement_6: 8328158979987770024
+      __silver_coin_fly_up_down_movement_7: 1565782406141787965
+      __silver_coin_fly_up_down_movement_8: 2910381305212334999
+      __silver_coin_fly_up_down_movement_9: -673377797885519077
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

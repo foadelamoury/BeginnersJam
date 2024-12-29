@@ -65,14 +65,14 @@ public class PlayerMovment : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             animator.SetTrigger("Jump");
-            Debug.Log("Jump Triggered");
+            //Debug.Log("Jump Triggered");
         }
         if (Input.GetKey(KeyCode.C))
         {
             isCrawling = !isCrawling;
         }
 
-        Debug.Log("Move Input: " + moveInput);
+        //Debug.Log("Move Input: " + moveInput);
         if (Mathf.Abs(moveInput) == 0)
         {
             animator.SetFloat("Speed", -1.0f);

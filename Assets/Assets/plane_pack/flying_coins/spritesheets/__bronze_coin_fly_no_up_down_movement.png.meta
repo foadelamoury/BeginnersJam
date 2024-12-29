@@ -497,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      __bronze_coin_fly_no_up_down_movement_0: -2206762376318689161
+      __bronze_coin_fly_no_up_down_movement_1: 178639656667121239
+      __bronze_coin_fly_no_up_down_movement_10: 7502074074365129623
+      __bronze_coin_fly_no_up_down_movement_11: 8924418103302220521
+      __bronze_coin_fly_no_up_down_movement_12: -2146728416614148461
+      __bronze_coin_fly_no_up_down_movement_13: -3956281870372451883
+      __bronze_coin_fly_no_up_down_movement_14: -1610079961927598022
+      __bronze_coin_fly_no_up_down_movement_2: -5289099739533193587
+      __bronze_coin_fly_no_up_down_movement_3: 9123829604544619393
+      __bronze_coin_fly_no_up_down_movement_4: 4628920394288078150
+      __bronze_coin_fly_no_up_down_movement_5: -3043277750237330599
+      __bronze_coin_fly_no_up_down_movement_6: -8800764404894881923
+      __bronze_coin_fly_no_up_down_movement_7: -4096980888410955816
+      __bronze_coin_fly_no_up_down_movement_8: 756640199412524838
+      __bronze_coin_fly_no_up_down_movement_9: -8062768718388078128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
