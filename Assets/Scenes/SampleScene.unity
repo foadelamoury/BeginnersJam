@@ -584,6 +584,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &706409606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 706409608}
+  - component: {fileID: 706409607}
+  m_Layer: 0
+  m_Name: plane spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &706409607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706409606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c1efec69af37e409b233c866bf0e72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planePrefab: {fileID: 5281611993982139450, guid: b6d8986d276c2fa4e8afef12a4c8642f, type: 3}
+  spawnPosition: {x: -10, y: 5, z: 0}
+  respawnDelay: 30
+  endX: 100
+  planeSpeed: 5
+--- !u!4 &706409608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706409606}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.0990171, y: 0.594131, z: -0.119886786}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &752697818
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,7 +645,7 @@ GameObject:
   - component: {fileID: 752697821}
   - component: {fileID: 752697820}
   - component: {fileID: 752697819}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1245,6 +1294,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7089004744188646112, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089004744188646112, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
       propertyPath: pickUpText
       value: 
       objectReference: {fileID: 320695267}
@@ -1254,7 +1307,7 @@ PrefabInstance:
       objectReference: {fileID: 2056715677}
     - target: {fileID: 7089004744188646112, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
       propertyPath: groundLayer.m_Bits
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1405,3 +1458,4 @@ SceneRoots:
   - {fileID: 3978156491554626624}
   - {fileID: 6620659141428265444}
   - {fileID: 1034600293}
+  - {fileID: 706409608}

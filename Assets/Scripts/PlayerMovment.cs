@@ -46,14 +46,15 @@ public class PlayerMovment : MonoBehaviour
         }
 
         // Apply the new scale to the transform
+        
         pickUpText.gameObject.transform.localScale = pickUpScale;
 
         #endregion
 
         if (isDead) return;
         float moveInput = Input.GetAxisRaw("Horizontal");
-        float speed = isCrawling ? crawlSpeed : moveSpeed;
-        rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
+        float speed = isCrawling ? crawlSpeed : moveSpeed ;
+        rb.linearVelocity = new Vector2(moveInput * speed , rb.linearVelocity.y);
 
         if (moveInput != 0)
         {
