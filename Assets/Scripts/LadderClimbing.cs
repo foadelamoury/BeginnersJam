@@ -12,6 +12,8 @@ public class LadderClimbing : MonoBehaviour
     public Collider2D bodyCollider; // The player's main collider (e.g., body)
     public Collider2D ladderTriggerCollider; // The player's collider for detecting ladder interaction
 
+    private float lockedXPosition; // Store the x-axis position when climbing starts
+
     void Start()
     {
         if (rb == null)
@@ -19,9 +21,6 @@ public class LadderClimbing : MonoBehaviour
 
         if (animator == null)
             animator = GetComponent<Animator>();
-
-        rb = GetComponent<Rigidbody2D>(); // Get the 2D Rigidbody component
-        animator = GetComponent<Animator>(); // Get the Animator component attached to the player
     }
 
     void Update()
@@ -30,21 +29,21 @@ public class LadderClimbing : MonoBehaviour
         if (canClimb && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)))
         {
             isClimbing = true;
-            //animator.SetBool("IsClimbing", true); // Trigger climbing animation
+            lockedXPosition = transform.position.x; // Lock the player's x-axis position
         }
 
-        // Climbing logic (move vertically and horizontally when climbing)
+        // Climbing logic (move vertically only when climbing)
         if (isClimbing)
         {
             // Disable gravity while climbing
             rb.gravityScale = 0f;
 
-            // Get vertical and horizontal input
+            // Get vertical input
             float vertical = Input.GetAxis("Vertical");
-            float horizontal = Input.GetAxis("Horizontal");
 
-            // Apply both vertical and horizontal movement (adjust velocity)
-            rb.linearVelocity = new Vector2(horizontal * climbSpeed, vertical * climbSpeed);
+            // Lock x-axis movement by directly setting position
+            rb.linearVelocity = new Vector2(0, vertical * climbSpeed);
+            transform.position = new Vector3(lockedXPosition, transform.position.y, transform.position.z);
 
             // Trigger climbing animation
             animator.SetBool("IsClimbing", true);
