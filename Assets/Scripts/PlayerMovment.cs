@@ -10,6 +10,7 @@ public class PlayerMovment : MonoBehaviour
     public Animator animator;
     public Rigidbody2D rb;
     public LayerMask groundLayer;
+    public float stairsClimbSpeed = 3f; // Speed for climbing stairs
 
     private bool isCrawling = false;
     private bool isGrounded = false;
@@ -73,21 +74,21 @@ public class PlayerMovment : MonoBehaviour
             isCrawling = !isCrawling;
         }
 
-        Debug.Log("Move Input: " + moveInput);
         if (Mathf.Abs(moveInput) == 0)
         {
-            animator.SetFloat("Speed", -1.0f);
+        Debug.Log("Move Input: " + moveInput);
+            animator.SetFloat("Speed", 5.0f);
             
         }
         else
         {
-            animator.SetFloat("Speed", Mathf.Abs(moveInput));
+            animator.SetFloat("Speed", 7);
 
            
         }
 
         // Update animator parameters
-        animator.SetFloat("Speed", Mathf.Abs(moveInput));
+        //animator.SetFloat("Speed", Mathf.Abs(moveInput));
 
         animator.SetBool("IsCrawling", isCrawling);
         //animator.SetBool("IsGrounded", IsGrounded());
@@ -102,7 +103,7 @@ public class PlayerMovment : MonoBehaviour
     {
         Vector2 position = transform.position;
         Vector2 groundCheckPosition = position + Vector2.down * 1.5f;
-        Vector2 groundCheckPosition = position + Vector2.down * 0.1f;
+        //groundCheckPosition = position + Vector2.down * 0.1f;
         float checkRadius = 0.2f;
         return Physics2D.OverlapCircle(groundCheckPosition, checkRadius, groundLayer);
     }
