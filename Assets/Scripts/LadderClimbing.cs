@@ -38,11 +38,14 @@ public class LadderClimbing : MonoBehaviour
             // Disable gravity while climbing
             rb.gravityScale = 0f;
 
+            // Freeze x-axis position and z-axis rotation
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+
             // Get vertical input
             float vertical = Input.GetAxis("Vertical");
 
             // Lock x-axis movement by directly setting position
-            rb.linearVelocity = new Vector2(0, vertical * climbSpeed);
+            rb.linearVelocity   = new Vector2(0, vertical * climbSpeed);
             transform.position = new Vector3(lockedXPosition, transform.position.y, transform.position.z);
 
             // Trigger climbing animation
@@ -53,10 +56,15 @@ public class LadderClimbing : MonoBehaviour
             // Restore gravity when not climbing
             rb.gravityScale = 1f;
 
+            // Freeze only z-axis rotation
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
             // Trigger idle animation when not climbing
             animator.SetBool("IsClimbing", false);
         }
     }
+
+
 
     // Detect when the player's body collider is near the ladder
     void OnTriggerEnter2D(Collider2D other)

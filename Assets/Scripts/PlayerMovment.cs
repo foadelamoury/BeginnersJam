@@ -18,6 +18,7 @@ public class PlayerMovment : MonoBehaviour
     private bool isOnStairs = false; // Check if the player is on stairs
     private SpriteRenderer spriteRenderer;
     private Vector3 pickUpScale;
+    public float speed;
     void Start()
     {
         pickUpScale = pickUpText.gameObject.transform.localScale;
@@ -39,7 +40,7 @@ public class PlayerMovment : MonoBehaviour
 
         if (isDead) return;
         float moveInput = Input.GetAxisRaw("Horizontal");
-        float speed = isCrawling ? crawlSpeed : moveSpeed ;
+         speed = isCrawling ? crawlSpeed : moveSpeed ;
         rb.linearVelocity = new Vector2(moveInput * speed , rb.linearVelocity.y);
         // Stairs climbing logic
         if (isOnStairs)
