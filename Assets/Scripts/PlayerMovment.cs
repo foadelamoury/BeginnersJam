@@ -31,14 +31,14 @@ public class PlayerMovment : MonoBehaviour
         else if (transform.localScale.x > 0)
             if(pickUpScale.x <0)
             pickUpScale = new Vector3(-pickUpScale.x, pickUpScale.y, pickUpScale.z);
-        // Apply the new scale to the transform
+        
         pickUpText.gameObject.transform.localScale = pickUpScale;
         #endregion
 
         if (isDead) return;
         float moveInput = Input.GetAxisRaw("Horizontal");
-        float speed = isCrawling ? crawlSpeed : moveSpeed;
-        rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
+        float speed = isCrawling ? crawlSpeed : moveSpeed ;
+        rb.linearVelocity = new Vector2(moveInput * speed , rb.linearVelocity.y);
 
         if (moveInput != 0)
         {
