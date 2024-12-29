@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      torpedo_flame_1_0: 5380647923338943139
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

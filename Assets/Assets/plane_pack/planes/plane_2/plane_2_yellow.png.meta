@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      plane_2_yellow_0: 7344615936569616517
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

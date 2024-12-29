@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      silver_wing_0: -2032795544343148870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

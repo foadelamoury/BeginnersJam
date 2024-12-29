@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      __bronze_coin_fly_up_down_movement_003_0: -889198779079568309
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
