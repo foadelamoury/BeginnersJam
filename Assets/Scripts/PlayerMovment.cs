@@ -7,7 +7,6 @@ public class PlayerMovment : MonoBehaviour
     public TextMeshProUGUI pickUpText;
     public float crawlSpeed = 2f;
     public float jumpForce = 10f;
-    public float stairsClimbSpeed = 3f; // Speed for climbing stairs
     public Animator animator;
     public Rigidbody2D rb;
     public LayerMask groundLayer;
