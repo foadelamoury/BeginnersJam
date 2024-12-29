@@ -93,10 +93,10 @@ public class PlayerMovment : MonoBehaviour
         animator.SetBool("IsCrawling", isCrawling);
         //animator.SetBool("IsGrounded", IsGrounded());
         // Update sorting order for depth
-        if (spriteRenderer != null)
-        {
-            spriteRenderer.sortingOrder = Mathf.RoundToInt(-transform.position.y * 100);
-        }
+        // if (spriteRenderer != null)
+        // {
+        //     spriteRenderer.sortingOrder = Mathf.RoundToInt(-transform.position.y * 100);
+        // }
     }
 
     private bool IsGrounded()
