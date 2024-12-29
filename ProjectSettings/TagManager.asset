@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -11,14 +11,14 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Sky
+  - Sun
+  - Ground
+  - HIlls
+  - Cloud
+  - Enemy
+  - Player
+  - Stairs
   - 
   - 
   - 
@@ -41,3 +41,29 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Sky
+    uniqueID: 2134400745
+    locked: 0
+  - name: Hills
+    uniqueID: 1774624201
+    locked: 0
+  - name: Sun
+    uniqueID: 1221673141
+    locked: 0
+  - name: Cloud
+    uniqueID: 2592385229
+    locked: 0
+  - name: Ground
+    uniqueID: 2319444557
+    locked: 0
+  - name: Stairs
+    uniqueID: 884812263
+    locked: 0
+  - name: Player
+    uniqueID: 2539857825
+    locked: 0
+  - name: Enemy
+    uniqueID: 1301403617
+    locked: 0
+  m_RenderingLayers:
+  - Default
