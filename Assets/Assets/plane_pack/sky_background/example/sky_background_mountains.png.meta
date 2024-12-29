@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sky_background_mountains_0: 8534170909771179286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
