@@ -6,7 +6,8 @@ public class ButtonHoverManager : MonoBehaviour, IPointerEnterHandler, IPointerE
 {
     public static ButtonHoverManager Instance;
     [SerializeField] private RectTransform hoverOverlay;
-
+    private GameObject currentHoveredButton = null;
+    private GameObject StartButton;
     void Awake()
     {
         if (Instance == null)
@@ -28,28 +29,43 @@ public class ButtonHoverManager : MonoBehaviour, IPointerEnterHandler, IPointerE
 
         if (hoverOverlay != null)
         {
-            hoverOverlay.gameObject.SetActive(false); // Hide it initially
+            hoverOverlay.gameObject.SetActive(false);
+            hoverOverlay.GetComponent<Image>().raycastTarget = false;
         }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        ShowHover(eventData.pointerEnter);
+        if (eventData.pointerEnter != currentHoveredButton)
+        {
+            currentHoveredButton = eventData.pointerEnter;
+            EventSystem.current.SetSelectedGameObject(currentHoveredButton);
+            ShowHover(currentHoveredButton);
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        HideHover();
+        if (eventData.pointerEnter == currentHoveredButton)
+        {
+            currentHoveredButton = null;
+            HideHover();
+        }
     }
 
     public void OnSelect(BaseEventData eventData)
     {
-        ShowHover(eventData.selectedObject);
+        currentHoveredButton = eventData.selectedObject;
+        ShowHover(currentHoveredButton);
     }
 
     public void OnDeselect(BaseEventData eventData)
     {
-        HideHover();
+        if (eventData.selectedObject == currentHoveredButton)
+        {
+            currentHoveredButton = null;
+            HideHover();
+        }
     }
 
     private void ShowHover(GameObject target)
@@ -69,5 +85,16 @@ public class ButtonHoverManager : MonoBehaviour, IPointerEnterHandler, IPointerE
         if (hoverOverlay == null) return;
 
         hoverOverlay.gameObject.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (EventSystem.current.currentSelectedGameObject == null)
+        {
+            if (Input.GetAxisRaw("Vertical") != 0)
+            {
+                EventSystem.current.SetSelectedGameObject(GameObject.Find("Play"));
+            }
+        }
     }
 }
