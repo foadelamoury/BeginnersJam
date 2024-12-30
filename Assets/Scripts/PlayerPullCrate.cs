@@ -6,6 +6,9 @@ public class PlayerPullCrate : MonoBehaviour
     private GameObject crateToPull = null; // Reference to the crate
     private Rigidbody2D playerRb;
     private bool isPulling = false;
+    public PlayerMovment playerMovment;
+    private bool isHolding = false;
+
 
     void Start()
     {
@@ -15,13 +18,16 @@ public class PlayerPullCrate : MonoBehaviour
     private void Update()
     {
         // Check if the E key is held and there's a crate nearby
-        if (Input.GetKey(KeyCode.E) && crateToPull != null)
+        if (PressToHold() && crateToPull != null)
         {
             isPulling = true;
+            playerMovment.moveSpeed *= -1;
+
         }
         else
         {
             isPulling = false;
+
         }
 
         if (isPulling && crateToPull != null)
@@ -65,6 +71,18 @@ public class PlayerPullCrate : MonoBehaviour
         if (collision.gameObject == crateToPull)
         {
             crateToPull = null;
+            playerMovment.moveSpeed *= -1;
+
         }
+    }
+
+    private bool PressToHold()
+    {
+        if (Input.GetKey(KeyCode.E))
+        {
+            isHolding = !isHolding;
+        }
+        return isHolding;
+       
     }
 }

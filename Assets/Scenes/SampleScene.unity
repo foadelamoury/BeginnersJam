@@ -365,6 +365,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pullSpeed: 5
+  playerMovment: {fileID: 514507047}
+--- !u!114 &514507047 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7089004744188646112, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
+  m_PrefabInstance: {fileID: 3718696402353524947}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514507037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa8c87675f0d6f429b9afc0b58c452b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
