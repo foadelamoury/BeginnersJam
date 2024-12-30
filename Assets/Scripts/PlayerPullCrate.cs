@@ -24,10 +24,16 @@ public class PlayerPullCrate : MonoBehaviour
             playerMovment.moveSpeed *= -1;
 
         }
+
         else
         {
             isPulling = false;
 
+        }
+
+        if (crateToPull == null && playerMovment.moveSpeed < 0)
+        {
+            playerMovment.moveSpeed *= -1;
         }
 
         if (isPulling && crateToPull != null)
@@ -71,8 +77,7 @@ public class PlayerPullCrate : MonoBehaviour
         if (collision.gameObject == crateToPull)
         {
             crateToPull = null;
-            playerMovment.moveSpeed *= -1;
-
+            
         }
     }
 
@@ -80,9 +85,18 @@ public class PlayerPullCrate : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E))
         {
+
             isHolding = !isHolding;
+
+        }
+        if (Input.GetKeyUp(KeyCode.E) && isHolding)
+        {
+            isPulling = false;
+
+            playerMovment.moveSpeed *= -1;
+
         }
         return isHolding;
-       
+
     }
 }

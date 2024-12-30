@@ -10,11 +10,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground Layer
+  - Player
   - Water
   - UI
   - Obstacles Layer
-  - 
+  - Ground Layer
   - 
   - 
   - 
