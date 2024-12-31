@@ -32,7 +32,7 @@ public class LadderClimbing : MonoBehaviour
             lockedXPosition = transform.position.x; // Lock the player's x-axis position
         }
 
-        // Climbing logic (move vertically only when climbing)
+        // Climbing logic
         if (isClimbing)
         {
             // Disable gravity while climbing
@@ -48,6 +48,16 @@ public class LadderClimbing : MonoBehaviour
             rb.linearVelocity   = new Vector2(0, vertical * climbSpeed);
             transform.position = new Vector3(lockedXPosition, transform.position.y, transform.position.z);
 
+            // Pause the animation if no vertical input
+            if (Mathf.Approximately(vertical, 0f))
+            {
+                animator.speed = 0f; // Pause the animation
+            }
+            else
+            {
+                animator.speed = 1f; // Resume the animation
+            }
+
             // Trigger climbing animation
             animator.SetBool("IsClimbing", true);
         }
@@ -55,11 +65,19 @@ public class LadderClimbing : MonoBehaviour
         {
             // Restore gravity when not climbing
             rb.gravityScale = 1f;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y); // Allow normal movement
+
+<<<<<<< HEAD
+            // Reset climbing animation
+=======
+            // Freeze only z-axis rotation
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
             // Freeze only z-axis rotation
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
             // Trigger idle animation when not climbing
+>>>>>>> da9c5ccd738bef0c8881ab7fefe4ac115ebb4c2e
             animator.SetBool("IsClimbing", false);
         }
     }
@@ -69,22 +87,20 @@ public class LadderClimbing : MonoBehaviour
     // Detect when the player's body collider is near the ladder
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Ladder") && other == ladderTriggerCollider) // Check if the body collider interacts with the ladder
+        if (other.CompareTag("Ladder") && other == ladderTriggerCollider)
         {
-            Debug.Log("Player's body is near the ladder");
-            canClimb = true; // Allow the player to start climbing when near the ladder
+            canClimb = true;
         }
     }
 
     // Detect when the player exits the ladder trigger
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Ladder") && other == ladderTriggerCollider) // Check if the body collider exits the ladder area
+        if (other.CompareTag("Ladder") && other == ladderTriggerCollider)
         {
-            Debug.Log("Player's body is no longer near the ladder");
-            canClimb = false; // Disable climbing when exiting the ladder
-            isClimbing = false; // Stop climbing animation
-            animator.SetBool("IsClimbing", false); // Stop climbing animation
+            canClimb = false;
+            isClimbing = false;
+            animator.SetBool("IsClimbing", false); // Reset climbing animation
         }
     }
 }

@@ -2,25 +2,21 @@ using UnityEngine;
 
 public class FenceTriggerManager : MonoBehaviour
 {
-    private FenceSystemManager fenceSystemManager;
+    public FenceSystemManager fenceSystemManager;
+    
 
     // Indicates if this fence is marked as the last box
-    [SerializeField] public bool lastBox = false;
+     public bool lastBox = false;
 
-    private void Start()
-    {
-        fenceSystemManager = FindObjectOfType<FenceSystemManager>();
-        if (fenceSystemManager == null)
-        {
-            Debug.LogError("FenceSystemManager not found in the scene!");
-        }
-    }
+    //bool canTrigger = false;
+    
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            Debug.Log("Player entered the fence trigger: " + gameObject.name);
+            
+            Debug.Log("STAYYYING " + gameObject.name);
 
             // Notify the FenceSystemManager about the player's entry
             fenceSystemManager.PlayerEnteredFence(this);
@@ -34,12 +30,14 @@ public class FenceTriggerManager : MonoBehaviour
                 Debug.Log("Player entered a normal box: " + gameObject.name);
             }
         }
+
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+           
             Debug.Log("Player exited the fence trigger: " + gameObject.name);
 
             // Notify the FenceSystemManager about the player's exit
