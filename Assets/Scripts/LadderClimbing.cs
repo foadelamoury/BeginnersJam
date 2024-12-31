@@ -75,6 +75,7 @@ public class LadderClimbing : MonoBehaviour
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
             // Trigger idle animation when not climbing
+>>>>>>> da9c5ccd738bef0c8881ab7fefe4ac115ebb4c2e
             animator.SetBool("IsClimbing", false);
         }
     }
