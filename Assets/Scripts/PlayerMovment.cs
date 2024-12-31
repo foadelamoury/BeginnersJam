@@ -11,15 +11,13 @@ public class PlayerMovment : MonoBehaviour
     public Rigidbody2D rb;
     public LayerMask groundLayer;
     public float stairsClimbSpeed = 3f; // Speed for climbing stairs
-
+    
     private bool isCrawling = false;
     private bool isGrounded = false;
     private bool isDead = false;
     private bool isOnStairs = false; // Check if the player is on stairs
     private SpriteRenderer spriteRenderer;
     private Vector3 pickUpScale;
-    bool xPosFlipped = false;
-
     void Start()
     {
         pickUpScale = pickUpText.gameObject.transform.localScale;
@@ -30,27 +28,13 @@ public class PlayerMovment : MonoBehaviour
     {
         #region Turning the text with the player
         if (transform.localScale.x < 0)
-        {
-            xPosFlipped = true;
-        }
+            if (pickUpScale.x >0)
+                pickUpScale = new Vector3(-pickUpScale.x, pickUpScale.y, pickUpScale.z);
         else if (transform.localScale.x > 0)
-        {
-            xPosFlipped = false;
-        }
-
-        if (xPosFlipped && pickUpScale.x > 0)
-        {
+            if(pickUpScale.x <0)
             pickUpScale = new Vector3(-pickUpScale.x, pickUpScale.y, pickUpScale.z);
-        }
-        else if (!xPosFlipped && pickUpScale.x < 0)
-        {
-            pickUpScale = new Vector3(-pickUpScale.x, pickUpScale.y, pickUpScale.z);
-        }
-
-        // Apply the new scale to the transform
         
         pickUpText.gameObject.transform.localScale = pickUpScale;
-
         #endregion
 
         if (isDead) return;
@@ -58,21 +42,25 @@ public class PlayerMovment : MonoBehaviour
         float speed = isCrawling ? crawlSpeed : moveSpeed ;
         rb.linearVelocity = new Vector2(moveInput * speed , rb.linearVelocity.y);
         // Stairs climbing logic
-        if (isOnStairs)
-        {
-            if (Input.GetKey(KeyCode.W)) // Climb up
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, stairsClimbSpeed);
-            }
-            else if (Input.GetKey(KeyCode.S)) // Climb down
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, -stairsClimbSpeed);
-            }
-            else
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); // Stop vertical movement
-            }
-        }
+        //if (isOnStairs)
+        //{
+        //    if (Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.UpArrow)) // Climb up
+        //    {
+        //        if(IsGrounded()&& moveInput == 0)
+        //        {
+
+        //        }
+        //        rb.linearVelocity = new Vector2(rb.linearVelocity.x, stairsClimbSpeed);
+        //    }
+        //    else if (Input.GetKey(KeyCode.S)||Input.GetKey(KeyCode.DownArrow)) // Climb down
+        //    {
+        //        rb.linearVelocity = new Vector2(rb.linearVelocity.x, -stairsClimbSpeed);
+        //    }
+        //    else
+        //    {
+        //        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); // Stop vertical movement
+        //    }
+        //}
 
         if (moveInput != 0)
         {
@@ -83,14 +71,40 @@ public class PlayerMovment : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             animator.SetTrigger("Jump");
-            //Debug.Log("Jump Triggered");
+            Debug.Log("Jump Triggered");
         }
-        if (Input.GetKey(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             isCrawling = !isCrawling;
+            Debug.Log(isCrawling);
+
+            if (isCrawling)
+            {
+                animator.SetTrigger("Crawling");
+            }
+            else
+            {
+                animator.SetTrigger("fromCrawling to idle");
+            }
         }
 
-        //Debug.Log("Move Input: " + moveInput);
+        // Pause or resume crawling animation based on movement input
+        if (isCrawling)
+        {
+            if (Mathf.Approximately(moveInput, 0f))
+            {
+                animator.speed = 0f; // Pause the animation when there's no movement
+            }
+            else
+            {
+                animator.speed = 1f; // Resume the animation when there's movement
+            }
+        }
+        else
+        {
+            animator.speed = 1f; // Ensure normal animation speed when not crawling
+        }
+
         if (Mathf.Abs(moveInput) == 0)
         {
         Debug.Log("Move Input: " + moveInput);
@@ -100,20 +114,14 @@ public class PlayerMovment : MonoBehaviour
         else
         {
             animator.SetFloat("Speed", 7);
-
-           
         }
 
         // Update animator parameters
         //animator.SetFloat("Speed", Mathf.Abs(moveInput));
-
-        animator.SetBool("IsCrawling", isCrawling);
+        
         //animator.SetBool("IsGrounded", IsGrounded());
         // Update sorting order for depth
-        // if (spriteRenderer != null)
-        // {
-        //     spriteRenderer.sortingOrder = Mathf.RoundToInt(-transform.position.y * 100);
-        // }
+
     }
 
     private bool IsGrounded()
@@ -124,21 +132,21 @@ public class PlayerMovment : MonoBehaviour
         float checkRadius = 0.2f;
         return Physics2D.OverlapCircle(groundCheckPosition, checkRadius, groundLayer);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Stairs"))
-        {
-            isOnStairs = true;
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.layer == LayerMask.NameToLayer("Stairs"))
+    //    {
+    //        isOnStairs = true;
+    //    }
+    //}
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Stairs"))
-        {
-            isOnStairs = false;
-        }
-    }
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.layer == LayerMask.NameToLayer("Stairs"))
+    //    {
+    //        isOnStairs = false;
+    //    }
+    //}
 
     public void Die()
     {

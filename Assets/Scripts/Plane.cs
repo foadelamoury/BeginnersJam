@@ -34,7 +34,7 @@ public class Plane : MonoBehaviour
     {
         while (rocketsThrown < rocketsToThrow)
         {
-            //Debug.Log("Rocket thrown at: " + Time.time); // Debug log for when the rocket is thrown
+            Debug.Log("Rocket thrown at: " + Time.time); // Debug log for when the rocket is thrown
             yield return new WaitForSeconds(fireRate);  // Delay the next rocket launch
 
             // Spawn a rocket slightly in front of the plane
@@ -44,7 +44,7 @@ public class Plane : MonoBehaviour
             rocketsThrown++;
 
             // Wait before throwing the next rocket (based on the fireRate)
-            //Debug.Log("Waiting for next rocket: " + fireRate + " seconds");
+            Debug.Log("Waiting for next rocket: " + fireRate + " seconds");
         }
     }
 }
