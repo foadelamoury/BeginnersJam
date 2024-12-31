@@ -71,3 +71,12 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Animations/Idle0000_0.controller
+Assets/Assets/New folder/climb0000.png.meta
+Assets/Assets/New folder/climb0001.png.meta
+Assets/Assets/New folder/climb0002.png.meta
+Assets/Assets/New folder/climb0003.png.meta
+Assets/Assets/New folder/climb0004.png.meta
+Assets/Assets/New folder/climb0005.png.meta
+Assets/Scenes/Level1.unity
+Assets/Scripts/LadderClimbing.cs
