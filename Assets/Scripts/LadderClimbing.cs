@@ -67,9 +67,7 @@ public class LadderClimbing : MonoBehaviour
             rb.gravityScale = 1f;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y); // Allow normal movement
 
-<<<<<<< HEAD
             // Reset climbing animation
-=======
             // Freeze only z-axis rotation
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
@@ -77,7 +75,6 @@ public class LadderClimbing : MonoBehaviour
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
             // Trigger idle animation when not climbing
->>>>>>> da9c5ccd738bef0c8881ab7fefe4ac115ebb4c2e
             animator.SetBool("IsClimbing", false);
         }
     }
