@@ -12,7 +12,6 @@ public class PlayerMovment : MonoBehaviour
     public LayerMask groundLayer;
     public float stairsClimbSpeed = 3f; 
     
-    private bool isCrawling = false;
     private bool isGrounded = false;
     private bool isDead = false;
     private SpriteRenderer spriteRenderer;
@@ -38,8 +37,8 @@ public class PlayerMovment : MonoBehaviour
 
         if (isDead) return;
         float moveInput = Input.GetAxisRaw("Horizontal");
-        float speed = isCrawling ? crawlSpeed : moveSpeed ;
-        rb.linearVelocity = new Vector2(moveInput * speed , rb.linearVelocity.y);
+        
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
         
 
         if (moveInput != 0)
@@ -47,7 +46,7 @@ public class PlayerMovment : MonoBehaviour
             transform.localScale = new Vector3(Mathf.Sign(moveInput), 1, 1);
         }
 
-        if (Input.GetButtonDown("Jump") && IsGrounded() && !isCrawling)
+        if (Input.GetButtonDown("Jump") && IsGrounded() )
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             animator.SetTrigger("Jump");
