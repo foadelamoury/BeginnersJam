@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spritesheet_mailNbomb_0: -1644871731026059152
+      spritesheet_mailNbomb_1: 1218262830882806111
+      spritesheet_mailNbomb_2: 8341636353793625921
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
