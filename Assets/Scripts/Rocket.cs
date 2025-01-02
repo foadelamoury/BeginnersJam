@@ -10,8 +10,7 @@ public class Rocket : MonoBehaviour
     // Audio clips for the start and collision
     public AudioClip startSound;
     public AudioClip collisionSound;
-
-    private AudioSource audioSource;
+   
 
     void Start()
     {
@@ -23,11 +22,7 @@ public class Rocket : MonoBehaviour
         }
 
         // Initialize the AudioSource and play the start sound
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource != null && startSound != null)
-        {
-            audioSource.PlayOneShot(startSound);
-        }
+        AudioManager.Instance.PlaySFX(startSound);
 
         Destroy(gameObject, lifetime);
     }
@@ -37,10 +32,7 @@ public class Rocket : MonoBehaviour
         Debug.Log("Trigger entered with: " + collider.gameObject.name);
 
         // Play the collision sound
-        if (audioSource != null && collisionSound != null)
-        {
-            audioSource.PlayOneShot(collisionSound);
-        }
+        AudioManager.Instance.PlaySFX(collisionSound);
 
         StartCoroutine(HandleCollision(collider));
 

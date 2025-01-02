@@ -5,15 +5,18 @@ using UnityEngine.UI;
 public class ButtonHoverManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler
 {
     public static ButtonHoverManager Instance;
+
     [SerializeField] private RectTransform hoverOverlay;
+    [SerializeField] private AudioClip hoverSound;   // Sound played on hover
+    //[SerializeField] private AudioClip selectSound;  // Sound played on selection
+
     private GameObject currentHoveredButton = null;
-    private GameObject StartButton;
+
     void Awake()
     {
         if (Instance == null)
             Instance = this;
 
-        // Try to find HoverOverlay if not manually assigned
         if (hoverOverlay == null)
         {
             GameObject overlayObject = GameObject.Find("HoverOverlay");
@@ -41,6 +44,8 @@ public class ButtonHoverManager : MonoBehaviour, IPointerEnterHandler, IPointerE
             currentHoveredButton = eventData.pointerEnter;
             EventSystem.current.SetSelectedGameObject(currentHoveredButton);
             ShowHover(currentHoveredButton);
+
+            
         }
     }
 
@@ -57,6 +62,8 @@ public class ButtonHoverManager : MonoBehaviour, IPointerEnterHandler, IPointerE
     {
         currentHoveredButton = eventData.selectedObject;
         ShowHover(currentHoveredButton);
+
+        //PlaySound(selectSound);
     }
 
     public void OnDeselect(BaseEventData eventData)
@@ -78,6 +85,7 @@ public class ButtonHoverManager : MonoBehaviour, IPointerEnterHandler, IPointerE
             hoverOverlay.position = targetRect.position;
             hoverOverlay.sizeDelta = targetRect.sizeDelta;
         }
+        PlaySound(hoverSound);
     }
 
     private void HideHover()
@@ -86,6 +94,15 @@ public class ButtonHoverManager : MonoBehaviour, IPointerEnterHandler, IPointerE
 
         hoverOverlay.gameObject.SetActive(false);
     }
+
+    private void PlaySound(AudioClip clip)
+    {
+        if (clip != null)
+        {
+            AudioManager.Instance.PlaySFX(clip);
+        }
+    }
+
 
     void Update()
     {

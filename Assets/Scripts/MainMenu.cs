@@ -5,6 +5,8 @@ public class MainMenu : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadSceneAsync("Level1");
+        AudioManager.Instance.StopMusic(); // Stop the background music
+        Debug.Log("Background music stopped!");
+        SceneManager.LoadSceneAsync("SampleScene");
     }
 }

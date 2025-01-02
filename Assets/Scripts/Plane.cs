@@ -9,13 +9,14 @@ public class Plane : MonoBehaviour
     public float fireRate = 2f;      // Time between rocket fires (shortened for testing)
     public int rocketsToThrow = 3;   // Number of rockets to throw
     public Vector3 rocketOffset = new Vector3(2f, 0f, 0f); // Offset for where rockets spawn
-
+    public AudioClip startSound;
     private int rocketsThrown = 0;
 
     void Start()
     {
         // Start the rocket throwing coroutine
         StartCoroutine(ThrowRockets());
+        AudioManager.Instance.PlaySFX(startSound);
     }
 
     void Update()
