@@ -40,12 +40,13 @@ public class PlayerMovment : MonoBehaviour
         float moveInput = Input.GetAxisRaw("Horizontal");
         float speed = isCrawling ? crawlSpeed : moveSpeed ;
         rb.linearVelocity = new Vector2(moveInput * speed , rb.linearVelocity.y);
-        
+
 
         if (moveInput != 0)
         {
-            transform.localScale = new Vector3(Mathf.Sign(moveInput)* Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            transform.localScale = new Vector3(Mathf.Sign(moveInput) * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
+        Debug.Log(IsGrounded());
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -73,7 +74,7 @@ public class PlayerMovment : MonoBehaviour
     private bool IsGrounded()
     {
         Vector2 position = transform.position;
-        Vector2 groundCheckPosition = position + Vector2.down * 1.5f;
+        Vector2 groundCheckPosition = position + Vector2.down * 5.5f;
         float checkRadius = 0.5f;
         return Physics2D.OverlapCircle(groundCheckPosition, checkRadius, groundLayer);
     }
