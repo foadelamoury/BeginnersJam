@@ -7,6 +7,13 @@ public class PickUpItem : MonoBehaviour
     private bool isPlayerInRange = false;
 
     public Canvas pickUpCanvas;
+    private BoxCollider2D deadSoldierCol;
+    public AudioClip tagTaken;
+
+    private void Start()
+    {
+        deadSoldierCol = GetComponent<BoxCollider2D>();
+    }
 
     void Update()
     {
@@ -16,6 +23,7 @@ public class PickUpItem : MonoBehaviour
 
             PickUp();
             pickUpCanvas.gameObject.SetActive(false);
+
 
         }
     }
@@ -47,7 +55,10 @@ public class PickUpItem : MonoBehaviour
         Debug.Log($"{gameObject.name} picked up!");
 
         // Example: Deactivate the object
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
+        deadSoldierCol.enabled = false;
+        AudioManager.Instance.PlaySFX(tagTaken);
+      
 
         // Alternatively, you could notify the player script or add to inventory
     }
