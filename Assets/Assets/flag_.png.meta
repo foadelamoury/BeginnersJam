@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Assets/flag_.png.meta
 guid: bca81dfa23c393348b2e6222cc053a95
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 1140878325878180622
     second: flag__0
-========
-guid: 99100705407fd0d4687be4dc1fc67e87
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 7736612574840664703
-    second: bunker2k-ref_0
->>>>>>>> scenes_transitions:Assets/Assets/bunker2k-ref.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -132,19 +123,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -174,22 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Assets/flag_.png.meta
       name: flag__0
-========
-      name: bunker2k-ref_0
->>>>>>>> scenes_transitions:Assets/Assets/bunker2k-ref.png.meta
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-<<<<<<<< HEAD:Assets/Assets/flag_.png.meta
         width: 1597
         height: 1607
-========
-        width: 3840
-        height: 2160
->>>>>>>> scenes_transitions:Assets/Assets/bunker2k-ref.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,13 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/Assets/flag_.png.meta
       spriteID: e0b49e1fac635df00800000000000000
       internalID: 1140878325878180622
-========
-      spriteID: f72b2308528fd5b60800000000000000
-      internalID: 7736612574840664703
->>>>>>>> scenes_transitions:Assets/Assets/bunker2k-ref.png.meta
       vertices: []
       indices: 
       edges: []
@@ -223,11 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/Assets/flag_.png.meta
       flag__0: 1140878325878180622
-========
-      bunker2k-ref_0: 7736612574840664703
->>>>>>>> scenes_transitions:Assets/Assets/bunker2k-ref.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

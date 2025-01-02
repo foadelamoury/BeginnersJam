@@ -1,13 +1,8 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Animations/fall.anim.meta
 guid: 8183bc9e94c9d9646b4fbc6027fc21e2
 NativeFormatImporter:
-========
-guid: 17d912aff670f2d4aa1e35ed28d12fa4
-folderAsset: yes
-DefaultImporter:
->>>>>>>> scenes_transitions:Assets/Assets/Environment.meta
   externalObjects: {}
+  mainObjectFileID: 7400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

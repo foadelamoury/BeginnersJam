@@ -56,15 +56,12 @@ public class PlayerMovment : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             animator.SetTrigger("Jump");
-            Debug.Log("Jump Triggered");
         }
 
         // Falling animation logic
         if (!IsGrounded() && rb.linearVelocity.y < 0)
         {
             animator.SetBool("IsFalling", true);
-            animator.SetFloat("Speed", 5.0f);
-            
         }
         else
         {

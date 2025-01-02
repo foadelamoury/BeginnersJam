@@ -5,6 +5,6 @@ public class MainMenu : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadSceneAsync("Bunker");
+        SceneManager.LoadSceneAsync("Level1");
     }
 }
