@@ -45,7 +45,7 @@ public class PlayerMovment : MonoBehaviour
         {
             transform.localScale = new Vector3(Mathf.Sign(moveInput), 1, 1);
         }
-
+        Debug.Log(IsGrounded());
         if (Input.GetButtonDown("Jump") && IsGrounded() )
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -73,7 +73,7 @@ public class PlayerMovment : MonoBehaviour
     private bool IsGrounded()
     {
         Vector2 position = transform.position;
-        Vector2 groundCheckPosition = position + Vector2.down * 1.5f;
+        Vector2 groundCheckPosition = position + Vector2.down * 2.5f;
         float checkRadius = 0.2f;
         return Physics2D.OverlapCircle(groundCheckPosition, checkRadius, groundLayer);
     }
