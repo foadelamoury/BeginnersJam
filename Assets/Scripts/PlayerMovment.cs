@@ -77,6 +77,10 @@ public class PlayerMovment : MonoBehaviour
         {
             animator.SetFloat("Speed", 8.0f);
         }
+        if(killPlayer){
+            Die();
+        }
+        
     }
 
 
@@ -108,4 +112,5 @@ public class PlayerMovment : MonoBehaviour
     {
         currentCheckpoint = checkpointPosition;
     }
+
 }
