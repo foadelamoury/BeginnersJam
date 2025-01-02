@@ -19,10 +19,14 @@ public class PlayerMovment : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Vector3 pickUpScale;
     private Vector3 currentCheckpoint; // To store the current checkpoint position
+    private Vector3 initialPosition; // Stores the game's initial position
+    [SerializeField] bool killPlayer = false;
     void Start()
     {
         pickUpScale = pickUpText.gameObject.transform.localScale;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        initialPosition = new Vector3(10.899930953979493f, -19.441625595092775f, 0f);
+        currentCheckpoint = initialPosition;
     }
 
     void Update()
@@ -70,6 +74,9 @@ public class PlayerMovment : MonoBehaviour
             animator.SetFloat("Speed", 7);
         }
 
+        if(killPlayer){
+            Die();
+        }
         
     }
 
@@ -86,6 +93,15 @@ public class PlayerMovment : MonoBehaviour
         isDead = true;
         rb.linearVelocity = Vector2.zero;
         animator.SetTrigger("Die");
+        // Respawn after a short delay
+        Invoke(nameof(Respawn), 1.5f);
+    }
+
+    private void Respawn()
+    {
+        transform.position = currentCheckpoint; // Respawn at the current checkpoint
+        isDead = false;
+        animator.ResetTrigger("Die");
     }
 
     public void UpdateCheckpoint(Vector3 checkpointPosition)
