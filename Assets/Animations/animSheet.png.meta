@@ -1,16 +1,31 @@
 fileFormatVersion: 2
-guid: 66b90acfe294b0b458df9a7a9a90ab7f
+guid: 3443845dd3bc9d743a73f7e294c5c57d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4258596962229667245
-    second: deadSoldiers_0
+      213: 8533066673036578769
+    second: animSheet_0
   - first:
-      213: -9169827573343175411
-    second: deadSoldiers_1
+      213: -5765632870000122851
+    second: animSheet_1
   - first:
-      213: 6163437177707346364
-    second: deadSoldiers_2
+      213: -5800419131397766843
+    second: animSheet_2
+  - first:
+      213: 3263625974907706092
+    second: animSheet_3
+  - first:
+      213: -588226039066943793
+    second: animSheet_4
+  - first:
+      213: -54194148992704189
+    second: animSheet_5
+  - first:
+      213: -3814067172187151525
+    second: animSheet_6
+  - first:
+      213: -5252272610475300277
+    second: animSheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,6 +144,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -145,13 +173,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: deadSoldiers_0
+      name: animSheet_0
       rect:
         serializedVersion: 2
-        x: 67
-        y: 863
-        width: 1183
-        height: 553
+        x: 908
+        y: 1796
+        width: 147
+        height: 430
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +188,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35a3eb830ac66e4c0800000000000000
-      internalID: -4258596962229667245
+      spriteID: 1dfc113ddea8b6670800000000000000
+      internalID: 8533066673036578769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: deadSoldiers_1
+      name: animSheet_1
       rect:
         serializedVersion: 2
-        x: 1455
-        y: 630
-        width: 952
-        height: 990
+        x: 1217
+        y: 1796
+        width: 148
+        height: 430
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +210,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0d3c47e76a3eb080800000000000000
-      internalID: -9169827573343175411
+      spriteID: d14a35ec37b5cffa0800000000000000
+      internalID: -5765632870000122851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: deadSoldiers_2
+      name: animSheet_2
       rect:
         serializedVersion: 2
-        x: 2606
-        y: 630
-        width: 1203
-        height: 657
+        x: 1527
+        y: 1796
+        width: 146
+        height: 430
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,8 +232,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb9bea4357de88550800000000000000
-      internalID: 6163437177707346364
+      spriteID: 54108ac2885c08fa0800000000000000
+      internalID: -5800419131397766843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animSheet_3
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 339
+        width: 186
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea9c12688aba4d20800000000000000
+      internalID: 3263625974907706092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animSheet_4
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 319
+        width: 179
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce97c5b88336d7f0800000000000000
+      internalID: -588226039066943793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 391
+        width: 193
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 341a26865b67f3ff0800000000000000
+      internalID: -54194148992704189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 337
+        width: 167
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b536e4c5d16b11bc0800000000000000
+      internalID: -3814067172187151525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 348
+        width: 218
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a2b1573ed2c17b0800000000000000
+      internalID: -5252272610475300277
       vertices: []
       indices: 
       edges: []
@@ -214,7 +352,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -224,9 +362,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      deadSoldiers_0: -4258596962229667245
-      deadSoldiers_1: -9169827573343175411
-      deadSoldiers_2: 6163437177707346364
+      rocket_0: -9158349384845336690
+      rocket_1: 6720079725827622669
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

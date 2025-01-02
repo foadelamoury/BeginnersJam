@@ -62,6 +62,8 @@ public class PlayerMovment : MonoBehaviour
         if (!IsGrounded() && rb.linearVelocity.y < 0)
         {
             animator.SetBool("IsFalling", true);
+            animator.SetFloat("Speed", 5.0f);
+            
         }
         else
         {

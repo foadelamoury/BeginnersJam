@@ -5,6 +5,11 @@ public class MainMenu : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadSceneAsync("Level1");
+<<<<<<< Updated upstream
+        SceneManager.LoadSceneAsync("Bunker");
+=======
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(nextSceneIndex);
+>>>>>>> Stashed changes
     }
 }
