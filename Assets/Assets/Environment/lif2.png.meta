@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 24483ddd609ca7b4e9f05ad22d53bd50
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1181946378470703787
+    second: lif2_0
+  - first:
+      213: 4038943928626668180
+    second: lif2_1
+  - first:
+      213: -8312232437221763405
+    second: lif2_2
+  - first:
+      213: -7318211357600464651
+    second: lif2_3
+  - first:
+      213: -2126826815834986566
+    second: lif2_4
+  - first:
+      213: -568150547448871796
+    second: lif2_5
+  - first:
+      213: 8377192026049721170
+    second: lif2_6
+  - first:
+      213: -3964975399143244170
+    second: lif2_7
+  - first:
+      213: -943383298570942920
+    second: lif2_8
+  - first:
+      213: 827707845030813706
+    second: lif2_9
+  - first:
+      213: -6641425494146174822
+    second: lif2_10
+  - first:
+      213: 2280986113769970265
+    second: lif2_11
+  - first:
+      213: -6825415384726645556
+    second: lif2_12
+  - first:
+      213: 7074632818381217765
+    second: lif2_13
+  - first:
+      213: -2519395305002620229
+    second: lif2_14
+  - first:
+      213: 8213556950315929475
+    second: lif2_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lif2_0
+      rect:
+        serializedVersion: 2
+        x: 10296
+        y: 3731
+        width: 789
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba24e4018fd176010800000000000000
+      internalID: 1181946378470703787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_1
+      rect:
+        serializedVersion: 2
+        x: 11456
+        y: 3637
+        width: 724
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49263859a163d0830800000000000000
+      internalID: 4038943928626668180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_2
+      rect:
+        serializedVersion: 2
+        x: 12576
+        y: 3731
+        width: 683
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6dae073a405ac80800000000000000
+      internalID: -8312232437221763405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_3
+      rect:
+        serializedVersion: 2
+        x: 13604
+        y: 3868
+        width: 135
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0cef63b8d707a90800000000000000
+      internalID: -7318211357600464651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_4
+      rect:
+        serializedVersion: 2
+        x: 16386
+        y: 3868
+        width: 112
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab76167874efb72e0800000000000000
+      internalID: -2126826815834986566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_5
+      rect:
+        serializedVersion: 2
+        x: 4593
+        y: 2056
+        width: 53
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c84cd5856168d18f0800000000000000
+      internalID: -568150547448871796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_6
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 1990
+        width: 1465
+        height: 763
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253bdef63c3c14470800000000000000
+      internalID: 8377192026049721170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_7
+      rect:
+        serializedVersion: 2
+        x: 6159
+        y: 2059
+        width: 13
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e77eeb1e399f8c0800000000000000
+      internalID: -3964975399143244170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_8
+      rect:
+        serializedVersion: 2
+        x: 7206
+        y: 2433
+        width: 683
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83684a163ed68e2f0800000000000000
+      internalID: -943383298570942920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_9
+      rect:
+        serializedVersion: 2
+        x: 8373
+        y: 2437
+        width: 719
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00add056eb9c7b00800000000000000
+      internalID: 827707845030813706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1202
+        width: 683
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90b13b63bae4d3a0800000000000000
+      internalID: -6641425494146174822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_11
+      rect:
+        serializedVersion: 2
+        x: 4592
+        y: 1354
+        width: 1537
+        height: 646
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a9bd809c0b7af10800000000000000
+      internalID: 2280986113769970265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_12
+      rect:
+        serializedVersion: 2
+        x: 6161
+        y: 1362
+        width: 17
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4d1e4ced04741a0800000000000000
+      internalID: -6825415384726645556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_13
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 0
+        width: 406
+        height: 1152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5efdee7b0152e2260800000000000000
+      internalID: 7074632818381217765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_14
+      rect:
+        serializedVersion: 2
+        x: 5091
+        y: 0
+        width: 629
+        height: 1151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba2884815f490dd0800000000000000
+      internalID: -2519395305002620229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lif2_15
+      rect:
+        serializedVersion: 2
+        x: 6092
+        y: 0
+        width: 196
+        height: 1128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f850e678a6cf170800000000000000
+      internalID: 8213556950315929475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lif2_0: 1181946378470703787
+      lif2_1: 4038943928626668180
+      lif2_10: -6641425494146174822
+      lif2_11: 2280986113769970265
+      lif2_12: -6825415384726645556
+      lif2_13: 7074632818381217765
+      lif2_14: -2519395305002620229
+      lif2_15: 8213556950315929475
+      lif2_2: -8312232437221763405
+      lif2_3: -7318211357600464651
+      lif2_4: -2126826815834986566
+      lif2_5: -568150547448871796
+      lif2_6: 8377192026049721170
+      lif2_7: -3964975399143244170
+      lif2_8: -943383298570942920
+      lif2_9: 827707845030813706
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
