@@ -10,7 +10,6 @@ public class LadderClimbing : MonoBehaviour
 
     // References to both colliders on the player
     public Collider2D bodyCollider; // The player's main collider (e.g., body)
-    public Collider2D[] ladderTriggerColliders; // Array for detecting ladder interaction
     private float lockedXPosition; // Store the x-axis position when climbing starts
 
     void Start()
@@ -77,10 +76,7 @@ public class LadderClimbing : MonoBehaviour
     {
         if (other.CompareTag("Ladder") )
         {
-            if (other.CompareTag("Ladder") && other == ladder)
-            {
                 canClimb = true;
-            }
         }
     }
 
@@ -89,12 +85,9 @@ public class LadderClimbing : MonoBehaviour
     {
         if (other.CompareTag("Ladder") )
         {
-            if (other.CompareTag("Ladder") && other == ladder)
-            {
                 canClimb = false;
                 isClimbing = false;
-                animator.SetBool("IsClimbing", false); // Reset climbing animation
-            }
+                animator.SetBool("IsClimbing", false);
         }
     }
 }
