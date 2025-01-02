@@ -50,7 +50,6 @@ public class PlayerMovment : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             animator.SetTrigger("Jump");
-            Debug.Log("Jump Triggered");
         }
         
 
@@ -58,7 +57,6 @@ public class PlayerMovment : MonoBehaviour
 
         if (Mathf.Abs(moveInput) == 0)
         {
-        Debug.Log("Move Input: " + moveInput);
             animator.SetFloat("Speed", 5.0f);
             
         }
