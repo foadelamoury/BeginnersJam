@@ -44,7 +44,7 @@ public class PlayerMovment : MonoBehaviour
 
         if (moveInput != 0)
         {
-            transform.localScale = new Vector3(Mathf.Sign(moveInput), 1, 1);
+            transform.localScale = new Vector3(Mathf.Sign(moveInput)* Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
