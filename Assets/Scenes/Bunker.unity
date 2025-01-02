@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &358625893 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5578439607210164402, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
+  m_PrefabInstance: {fileID: 2102588970}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &545988192 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6550330270813912869, guid: 66d2bf5b3cc23de4bbe6a3256e6975e5, type: 3}
@@ -294,7 +299,6 @@ PrefabInstance:
 <<<<<<< HEAD
 =======
       propertyPath: m_LocalScale.x
-<<<<<<< Updated upstream
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5578439607210164402, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
@@ -375,7 +379,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 7089004744188646112, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
       propertyPath: stairsClimbSpeed
       value: 3
@@ -400,6 +403,7 @@ GameObject:
   - component: {fileID: 2123140171}
   - component: {fileID: 2123140170}
   - component: {fileID: 2123140173}
+  - component: {fileID: 2123140174}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -424,8 +428,8 @@ Camera:
   m_GameObject: {fileID: 2123140169}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -450,7 +454,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 9.8
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -475,9 +479,9 @@ Transform:
   m_GameObject: {fileID: 2123140169}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.79, y: 4.14, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -525,6 +529,21 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &2123140174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123140169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a1e0fc149bb804c8c5b13f96bc47f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 358625893}
+  offset: {x: 0, y: 2.5, z: -1}
+  smoothSpeed: 0.125
 --- !u!1001 &4356032762050609284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -577,7 +596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2251960158514498329, guid: 66d2bf5b3cc23de4bbe6a3256e6975e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.72
+      value: 6.296834
       objectReference: {fileID: 0}
     - target: {fileID: 2251960158514498329, guid: 66d2bf5b3cc23de4bbe6a3256e6975e5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -657,18 +676,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 6940364402426080201, guid: 66d2bf5b3cc23de4bbe6a3256e6975e5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 16.77
-      objectReference: {fileID: 0}
-    - target: {fileID: 8797181336752362483, guid: 66d2bf5b3cc23de4bbe6a3256e6975e5, type: 3}
-      propertyPath: m_Size.x
-      value: 20.00391
-      objectReference: {fileID: 0}
-    - target: {fileID: 8797181336752362483, guid: 66d2bf5b3cc23de4bbe6a3256e6975e5, type: 3}
-      propertyPath: m_Offset.x
-      value: 2.0758114
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -676,9 +683,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6550330270813912869, guid: 66d2bf5b3cc23de4bbe6a3256e6975e5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 545988195}
-    - targetCorrespondingSourceObject: {fileID: 8039792316891826826, guid: 66d2bf5b3cc23de4bbe6a3256e6975e5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1026618210}
   m_SourcePrefab: {fileID: 100100000, guid: 66d2bf5b3cc23de4bbe6a3256e6975e5, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

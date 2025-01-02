@@ -56,6 +56,7 @@ public class PlayerMovment : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             animator.SetTrigger("Jump");
+            Debug.Log("Jump Triggered");
         }
 
         // Falling animation logic

@@ -218,11 +218,7 @@ Transform:
   - {fileID: 6940364402426080201}
   - {fileID: 6476063362907384127}
   - {fileID: 458896138591567681}
-<<<<<<< Updated upstream
   - {fileID: 1481455223801787546}
-=======
-  - {fileID: 2379223271839793285}
->>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5776389117994456885
@@ -358,11 +354,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 34.487503, y: 5.6165795}
   m_EdgeRadius: 0
-<<<<<<< Updated upstream
 --- !u!1 &8667072492734354789
-=======
---- !u!1 &8039792316891826826
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -370,63 +362,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream
   - component: {fileID: 1481455223801787546}
   - component: {fileID: 2808462760984326556}
   m_Layer: 0
   m_Name: top
-=======
-  - component: {fileID: 2379223271839793285}
-  - component: {fileID: 8797181336752362483}
-  m_Layer: 0
-  m_Name: nextLevel
->>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream
 --- !u!4 &1481455223801787546
-=======
---- !u!4 &2379223271839793285
->>>>>>> Stashed changes
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 8667072492734354789}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -16.37, y: 10.22, z: 0.15390617}
-=======
-  m_GameObject: {fileID: 8039792316891826826}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.67, y: 12.62, z: 0}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2251960158514498329}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
 --- !u!61 &2808462760984326556
-=======
---- !u!61 &8797181336752362483
->>>>>>> Stashed changes
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 8667072492734354789}
-=======
-  m_GameObject: {fileID: 8039792316891826826}
->>>>>>> Stashed changes
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
