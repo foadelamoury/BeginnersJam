@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: cc1d3f3277fc1ac4980ebfa9e2f365d4
+guid: 35982cd93cf7e424ca7aca326c6c73aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1644871731026059152
-    second: spritesheet_mailNbomb_0
+      213: -9158349384845336690
+    second: rocket_0
   - first:
-      213: 1218262830882806111
-    second: spritesheet_mailNbomb_1
-  - first:
-      213: 8341636353793625921
-    second: spritesheet_mailNbomb_2
+      213: 6720079725827622669
+    second: rocket_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -132,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet_mailNbomb_0
+      name: rocket_0
       rect:
         serializedVersion: 2
-        x: 328
-        y: 249
-        width: 311
-        height: 502
+        x: 132
+        y: 835
+        width: 12
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0702c1320ed3c29e0800000000000000
-      internalID: -1644871731026059152
+      spriteID: e8f506be1c107e080800000000000000
+      internalID: -9158349384845336690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_mailNbomb_1
+      name: rocket_1
       rect:
         serializedVersion: 2
-        x: 1377
-        y: 14
-        width: 290
-        height: 901
+        x: 140
+        y: 202
+        width: 689
+        height: 639
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,30 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f59d4dd079328e010800000000000000
-      internalID: 1218262830882806111
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_mailNbomb_2
-      rect:
-        serializedVersion: 2
-        x: 2083
-        y: 112
-        width: 835
-        height: 775
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 14f8a51611273c370800000000000000
-      internalID: 8341636353793625921
+      spriteID: d078248f7e4824d50800000000000000
+      internalID: 6720079725827622669
       vertices: []
       indices: 
       edges: []
@@ -210,10 +185,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      spritesheet_mailNbomb_0: -1644871731026059152
-      spritesheet_mailNbomb_1: 1218262830882806111
-      spritesheet_mailNbomb_2: 8341636353793625921
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
