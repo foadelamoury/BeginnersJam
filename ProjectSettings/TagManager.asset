@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Crate
   - Ladder
+  - Fence
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - Obstacles Layer
   - Ground Layer
-  - 
+  - Wall
   - 
   - 
   - 

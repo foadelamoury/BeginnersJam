@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &50244953 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 113451041715790920, guid: ead0e769890006344b0e30f0c059ea5d, type: 3}
+  m_PrefabInstance: {fileID: 4014830894004365074}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &336502339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -145,11 +150,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5578439607210164402, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 239.5
+      value: 10.9
       objectReference: {fileID: 0}
     - target: {fileID: 5578439607210164402, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29.3
+      value: -16.6
       objectReference: {fileID: 0}
     - target: {fileID: 5578439607210164402, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -206,6 +211,84 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5578439607210164402, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
   m_PrefabInstance: {fileID: 336502339}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1727031647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1727031648}
+  - component: {fileID: 1727031649}
+  m_Layer: 7
+  m_Name: wallL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1727031648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727031647}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -84.3, y: -21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 50244953}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1727031649
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727031647}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.33402944, y: 0.38970184}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.6680589, y: 11.651833}
+  m_EdgeRadius: 0
 --- !u!1001 &1986909234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -468,9 +551,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: city-out
       objectReference: {fileID: 0}
+    - target: {fileID: 2449364646238090761, guid: ead0e769890006344b0e30f0c059ea5d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 113451041715790920, guid: ead0e769890006344b0e30f0c059ea5d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1727031648}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ead0e769890006344b0e30f0c059ea5d, type: 3}
 --- !u!1660057539 &9223372036854775807

@@ -760,7 +760,32 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      deadSoldiers_0: -4258596962229667245
+      deadSoldiers_1: -9169827573343175411
+      deadSoldiers_10: -8376391974966620994
+      deadSoldiers_11: -201365208747514264
+      deadSoldiers_12: 7361402022139722805
+      deadSoldiers_13: 5479409858207679733
+      deadSoldiers_14: -2901217380975209826
+      deadSoldiers_15: -1945476477773153364
+      deadSoldiers_16: 1015776892282644801
+      deadSoldiers_17: -6947465116969899025
+      deadSoldiers_18: 9086211009853703509
+      deadSoldiers_19: 5405226915082968148
+      deadSoldiers_2: 6163437177707346364
+      deadSoldiers_20: -7389443956890512095
+      deadSoldiers_21: -8692354038748386248
+      deadSoldiers_22: 6621841376298109892
+      deadSoldiers_23: -996504321541163403
+      deadSoldiers_24: 1981812452465810862
+      deadSoldiers_3: -1955077358141064175
+      deadSoldiers_4: 4000990923023711867
+      deadSoldiers_5: 1886339948837438834
+      deadSoldiers_6: -8319535605825023362
+      deadSoldiers_7: 5882835225438240031
+      deadSoldiers_8: 4799664527937312682
+      deadSoldiers_9: 8342898651281749201
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
