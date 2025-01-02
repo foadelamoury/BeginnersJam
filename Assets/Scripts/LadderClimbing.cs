@@ -79,6 +79,7 @@ public class LadderClimbing : MonoBehaviour
         if (other.CompareTag("Ladder") && other == ladderTriggerCollider)
         {
             canClimb = true;
+            bodyCollider.enabled = false;
         }
     }
 
