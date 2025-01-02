@@ -18,6 +18,7 @@ public class PlayerMovment : MonoBehaviour
     private bool isDead = false;
     private SpriteRenderer spriteRenderer;
     private Vector3 pickUpScale;
+    private Vector3 currentCheckpoint; // To store the current checkpoint position
     void Start()
     {
         pickUpScale = pickUpText.gameObject.transform.localScale;
@@ -86,4 +87,10 @@ public class PlayerMovment : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         animator.SetTrigger("Die");
     }
+
+    public void UpdateCheckpoint(Vector3 checkpointPosition)
+    {
+        currentCheckpoint = checkpointPosition;
+    }
+
 }
