@@ -44,10 +44,9 @@ public class PlayerMovment : MonoBehaviour
 
         if (moveInput != 0)
         {
-            transform.localScale = new Vector3(Mathf.Sign(moveInput), 1, 1);
+            transform.localScale = new Vector3(Mathf.Sign(moveInput)* Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
-
-        if (Input.GetButtonDown("Jump") && IsGrounded() && !isCrawling)
+        if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             animator.SetTrigger("Jump");
@@ -75,7 +74,7 @@ public class PlayerMovment : MonoBehaviour
     {
         Vector2 position = transform.position;
         Vector2 groundCheckPosition = position + Vector2.down * 1.5f;
-        float checkRadius = 0.2f;
+        float checkRadius = 0.5f;
         return Physics2D.OverlapCircle(groundCheckPosition, checkRadius, groundLayer);
     }
     

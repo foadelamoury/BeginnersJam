@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 66b90acfe294b0b458df9a7a9a90ab7f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4258596962229667245
+    second: deadSoldiers_0
+  - first:
+      213: -9169827573343175411
+    second: deadSoldiers_1
+  - first:
+      213: 6163437177707346364
+    second: deadSoldiers_2
+  - first:
+      213: -1955077358141064175
+    second: deadSoldiers_3
+  - first:
+      213: 4000990923023711867
+    second: deadSoldiers_4
+  - first:
+      213: 1886339948837438834
+    second: deadSoldiers_5
+  - first:
+      213: -8319535605825023362
+    second: deadSoldiers_6
+  - first:
+      213: 5882835225438240031
+    second: deadSoldiers_7
+  - first:
+      213: 4799664527937312682
+    second: deadSoldiers_8
+  - first:
+      213: 8342898651281749201
+    second: deadSoldiers_9
+  - first:
+      213: -8376391974966620994
+    second: deadSoldiers_10
+  - first:
+      213: -201365208747514264
+    second: deadSoldiers_11
+  - first:
+      213: 7361402022139722805
+    second: deadSoldiers_12
+  - first:
+      213: 5479409858207679733
+    second: deadSoldiers_13
+  - first:
+      213: -2901217380975209826
+    second: deadSoldiers_14
+  - first:
+      213: -1945476477773153364
+    second: deadSoldiers_15
+  - first:
+      213: 1015776892282644801
+    second: deadSoldiers_16
+  - first:
+      213: -6947465116969899025
+    second: deadSoldiers_17
+  - first:
+      213: 9086211009853703509
+    second: deadSoldiers_18
+  - first:
+      213: 5405226915082968148
+    second: deadSoldiers_19
+  - first:
+      213: -7389443956890512095
+    second: deadSoldiers_20
+  - first:
+      213: -8692354038748386248
+    second: deadSoldiers_21
+  - first:
+      213: 6621841376298109892
+    second: deadSoldiers_22
+  - first:
+      213: -996504321541163403
+    second: deadSoldiers_23
+  - first:
+      213: 1981812452465810862
+    second: deadSoldiers_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: deadSoldiers_0
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 106
+        width: 743
+        height: 784
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a3eb830ac66e4c0800000000000000
+      internalID: -4258596962229667245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_1
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 887
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d3c47e76a3eb080800000000000000
+      internalID: -9169827573343175411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_2
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 805
+        width: 112
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9bea4357de88550800000000000000
+      internalID: 6163437177707346364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_3
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 737
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11cb79f408b2ed4e0800000000000000
+      internalID: -1955077358141064175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_4
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 704
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ef36cdb00668730800000000000000
+      internalID: 4000990923023711867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_5
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 713
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27585107030ad2a10800000000000000
+      internalID: 1886339948837438834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_6
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 686
+        width: 40
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e72d59ef1721b8c80800000000000000
+      internalID: -8319535605825023362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_7
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 131
+        width: 971
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1db66c087704a150800000000000000
+      internalID: 5882835225438240031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_8
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 651
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa71fbc5575db9240800000000000000
+      internalID: 4799664527937312682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_9
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 638
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4fbbaee1ee7c370800000000000000
+      internalID: 8342898651281749201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_10
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 627
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc8ea8f0e311cb80800000000000000
+      internalID: -8376391974966620994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_11
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 166
+        width: 983
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8666b76d86b943df0800000000000000
+      internalID: -201365208747514264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_12
+      rect:
+        serializedVersion: 2
+        x: 2627
+        y: 608
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cfa720324f82660800000000000000
+      internalID: 7361402022139722805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 421
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f40e312c36ca0c40800000000000000
+      internalID: 5479409858207679733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_14
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 415
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9298cec92eccb7d0800000000000000
+      internalID: -2901217380975209826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 390
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cabf37773774005e0800000000000000
+      internalID: -1945476477773153364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_16
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 337
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 149ae83a3b3c81e00800000000000000
+      internalID: 1015776892282644801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_17
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 345
+        width: 44
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb679d0945a59f90800000000000000
+      internalID: -6947465116969899025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_18
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 124
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555c29cc5c4b81e70800000000000000
+      internalID: 9086211009853703509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_19
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 36
+        width: 160
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c96ebbd39330b40800000000000000
+      internalID: 5405226915082968148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_20
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 29
+        width: 159
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12552e54fdb637990800000000000000
+      internalID: -7389443956890512095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_21
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 26
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c687a4e0e8e5780800000000000000
+      internalID: -8692354038748386248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_22
+      rect:
+        serializedVersion: 2
+        x: 2452
+        y: 33
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb8b31d5a185eb50800000000000000
+      internalID: 6621841376298109892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_23
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 0
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576b5696994bb22f0800000000000000
+      internalID: -996504321541163403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deadSoldiers_24
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 0
+        width: 440
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead9ba8ecefc08b10800000000000000
+      internalID: 1981812452465810862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      deadSoldiers_0: -4258596962229667245
+      deadSoldiers_1: -9169827573343175411
+      deadSoldiers_10: -8376391974966620994
+      deadSoldiers_11: -201365208747514264
+      deadSoldiers_12: 7361402022139722805
+      deadSoldiers_13: 5479409858207679733
+      deadSoldiers_14: -2901217380975209826
+      deadSoldiers_15: -1945476477773153364
+      deadSoldiers_16: 1015776892282644801
+      deadSoldiers_17: -6947465116969899025
+      deadSoldiers_18: 9086211009853703509
+      deadSoldiers_19: 5405226915082968148
+      deadSoldiers_2: 6163437177707346364
+      deadSoldiers_20: -7389443956890512095
+      deadSoldiers_21: -8692354038748386248
+      deadSoldiers_22: 6621841376298109892
+      deadSoldiers_23: -996504321541163403
+      deadSoldiers_24: 1981812452465810862
+      deadSoldiers_3: -1955077358141064175
+      deadSoldiers_4: 4000990923023711867
+      deadSoldiers_5: 1886339948837438834
+      deadSoldiers_6: -8319535605825023362
+      deadSoldiers_7: 5882835225438240031
+      deadSoldiers_8: 4799664527937312682
+      deadSoldiers_9: 8342898651281749201
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
