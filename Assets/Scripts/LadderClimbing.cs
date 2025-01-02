@@ -4,7 +4,7 @@ public class LadderClimbing : MonoBehaviour
 {
     private bool isClimbing = false;
     private bool canClimb = false; // Flag to check if the player can start climbing
-    private float climbSpeed = 3f;
+    [SerializeField] float climbSpeed = 7f;
     private Rigidbody2D rb; // Use Rigidbody2D for 2D physics
     private Animator animator;
 
@@ -76,7 +76,7 @@ public class LadderClimbing : MonoBehaviour
     // Detect when the player's body collider is near the ladder
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Ladder") && other == ladderTriggerCollider)
+        if (other.CompareTag("Ladder") )
         {
             canClimb = true;
         }
@@ -85,7 +85,7 @@ public class LadderClimbing : MonoBehaviour
     // Detect when the player exits the ladder trigger
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Ladder") && other == ladderTriggerCollider)
+        if (other.CompareTag("Ladder") )
         {
             canClimb = false;
             isClimbing = false;

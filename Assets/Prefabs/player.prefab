@@ -322,12 +322,12 @@ SpriteRenderer:
   m_SortingLayerID: -1924150037
   m_SortingLayer: 7
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2566633953745183804, guid: c1246023cb7a98c49914eada9588650f, type: 3}
+  m_Sprite: {fileID: 4062285552254759053, guid: b5ae1c5cf004f2c49ad961654508d187, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.98, y: 2.27}
+  m_Size: {x: 1.4704025, y: 4.2999997}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -383,16 +383,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aa8c87675f0d6f429b9afc0b58c452b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 7
   pickUpText: {fileID: 1982139818228089807}
-  crawlSpeed: 2
-  jumpForce: 10
+  jumpForce: 8
   animator: {fileID: 3736769614263503008}
   rb: {fileID: 1925318232522142212}
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
-  stairsClimbSpeed: 3
+  stairsClimbSpeed: 10
+  offset: 1.5
+  checkRadius: 1.5
+  killPlayer: 0
 --- !u!50 &1925318232522142212
 Rigidbody2D:
   serializedVersion: 5
@@ -454,8 +456,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.3545984, y: 0.019643903}
-  m_Size: {x: 0.7724755, y: 2.2307122}
+  m_Offset: {x: -0.007388188, y: 0.06003312}
+  m_Size: {x: 0.7093468, y: 4.134788}
   m_Direction: 0
 --- !u!114 &5510964911051172969
 MonoBehaviour:
@@ -469,6 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4bb4c536ba4f74480be965d40320d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  climbSpeed: 7
   bodyCollider: {fileID: 4195181511962917294}
   ladderTriggerCollider: {fileID: 0}
 --- !u!70 &5058707920322095062
@@ -505,6 +508,6 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.03393507, y: 0.0196439}
-  m_Size: {x: 0.11357069, y: 2.230712}
+  m_Offset: {x: 0.45847228, y: 0.03118317}
+  m_Size: {x: 0.23982956, y: 3.89245}
   m_Direction: 0
