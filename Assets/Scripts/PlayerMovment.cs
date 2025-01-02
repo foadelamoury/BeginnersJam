@@ -10,8 +10,9 @@ public class PlayerMovment : MonoBehaviour
     public Animator animator;
     public Rigidbody2D rb;
     public LayerMask groundLayer;
-    public float stairsClimbSpeed = 3f; 
-    
+    public float stairsClimbSpeed = 3f;
+    [SerializeField] float offset = 1.5f;
+    [SerializeField] float checkRadius = 0.5f;
     private bool isCrawling = false;
     private bool isGrounded = false;
     private bool isDead = false;
@@ -74,8 +75,7 @@ public class PlayerMovment : MonoBehaviour
     private bool IsGrounded()
     {
         Vector2 position = transform.position;
-        Vector2 groundCheckPosition = position + Vector2.down * 5.5f;
-        float checkRadius = 0.5f;
+        Vector2 groundCheckPosition = position + Vector2.down * offset;
         return Physics2D.OverlapCircle(groundCheckPosition, checkRadius, groundLayer);
     }
     

@@ -272,7 +272,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.11, y: 1.34, z: 0}
-  m_LocalScale: {x: 2.7107, y: 2.9658, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7335276828992154268}
@@ -386,13 +386,15 @@ MonoBehaviour:
   moveSpeed: 5
   pickUpText: {fileID: 1982139818228089807}
   crawlSpeed: 2
-  jumpForce: 10
+  jumpForce: 6
   animator: {fileID: 3736769614263503008}
   rb: {fileID: 1925318232522142212}
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
   stairsClimbSpeed: 3
+  offset: 1.5
+  checkRadius: 1.5
 --- !u!50 &1925318232522142212
 Rigidbody2D:
   serializedVersion: 5
