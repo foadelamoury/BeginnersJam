@@ -4,8 +4,13 @@ using UnityEngine;
 public class Rocket : MonoBehaviour
 {
     public float speed = 10f;
-    public float lifetime = 10f;
+    public float lifetime = 15f;
     public Animator rocketAnimator;
+
+    // Audio clips for the start and collision
+    public AudioClip startSound;
+    public AudioClip collisionSound;
+
 
     void Start()
     {
@@ -13,15 +18,21 @@ public class Rocket : MonoBehaviour
         if (rb != null)
         {
             Vector2 diagonalDirection = new Vector2(0f, -1f).normalized;
-            rb.linearVelocity = diagonalDirection * speed; 
+            rb.linearVelocity = diagonalDirection * speed;
         }
 
-        Destroy(gameObject, lifetime); 
+        // Initialize the AudioSource and play the start sound
+        AudioManager.Instance.PlaySFX(startSound);
+
+        Destroy(gameObject, lifetime);
     }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
         Debug.Log("Trigger entered with: " + collider.gameObject.name);
+
+        // Play the collision sound
+        AudioManager.Instance.PlaySFX(collisionSound);
 
         StartCoroutine(HandleCollision(collider));
 
@@ -42,8 +53,8 @@ public class Rocket : MonoBehaviour
             rocketAnimator.SetTrigger("Damage");
         }
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.0f);
 
-        Destroy(gameObject); 
+        Destroy(gameObject);
     }
 }

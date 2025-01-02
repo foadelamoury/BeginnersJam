@@ -5,6 +5,7 @@ public class MainMenu : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadSceneAsync("Level1");
+        AudioManager.Instance.StopMusic();
+        SceneManager.LoadSceneAsync("City");
     }
 }
