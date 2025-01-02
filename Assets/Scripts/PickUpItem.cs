@@ -58,8 +58,6 @@ public class PickUpItem : MonoBehaviour
         //gameObject.SetActive(false);
         deadSoldierCol.enabled = false;
         AudioManager.Instance.PlaySFX(tagTaken);
-      
-
-        // Alternatively, you could notify the player script or add to inventory
+              // Alternatively, you could notify the player script or add to inventory
     }
 }
