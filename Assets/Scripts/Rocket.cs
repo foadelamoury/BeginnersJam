@@ -50,6 +50,7 @@ public class Rocket : MonoBehaviour
     {
         if (rocketAnimator != null)
         {
+            Debug.Log("dihiwhd");
             rocketAnimator.SetTrigger("Damage");
         }
 

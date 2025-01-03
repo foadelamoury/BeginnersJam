@@ -103,7 +103,7 @@ MonoBehaviour:
   speed: 5
   endX: 10
   rocketPrefab: {fileID: 1365643994393119775, guid: 5fe1db061cf1c924592882e487abb5e0, type: 3}
-  fireRate: 2
+  fireRate: 1.5
   rocketsToThrow: 3
   rocketOffset: {x: 2, y: 0, z: 0}
   startSound: {fileID: 8300000, guid: 2a1b237f8d5db6547baf605425392708, type: 3}
