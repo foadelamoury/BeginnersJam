@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2045168682407028943}
   - component: {fileID: 6161950791002509863}
   - component: {fileID: 7743604474704399046}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,8 +142,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.90022224, y: 0.49609986}
-  m_Size: {x: 5.1142616, y: 5.1297464}
+  m_Offset: {x: 0.17709152, y: -0.6319625}
+  m_Size: {x: 3.667977, y: 7.3858724}
   m_Direction: 0
 --- !u!50 &6161950791002509863
 Rigidbody2D:

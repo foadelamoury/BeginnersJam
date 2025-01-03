@@ -35,12 +35,7 @@ public class Rocket : MonoBehaviour
         AudioManager.Instance.PlaySFX(collisionSound);
 
 
-        if (collider.CompareTag("startplanes")|| collider.CompareTag("plane"))
-        {
-            Debug.Log("hi");
-        }
-        else 
-        {
+        
             StartCoroutine(HandleCollision(collider));
             if(collider.CompareTag("Player"))
             {
@@ -51,7 +46,7 @@ public class Rocket : MonoBehaviour
                 }
             }
             
-        }
+        
     }
 
     IEnumerator HandleCollision(Collider2D collider)
