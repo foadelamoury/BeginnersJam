@@ -361,11 +361,66 @@ PrefabInstance:
       propertyPath: stairsClimbSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7089004744188646112, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
+      propertyPath: initialPositionObject
+      value: 
+      objectReference: {fileID: 621941550}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
+--- !u!1 &378047327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 967926674755716686, guid: ead0e769890006344b0e30f0c059ea5d, type: 3}
+  m_PrefabInstance: {fileID: 4014830894004365074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!68 &378047329
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378047327}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -39.63085, y: 11.937094}
+  - {x: -39.534256, y: 20.323042}
+  - {x: -37.063812, y: 20.358446}
+  - {x: -37.09352, y: 11.11551}
+  - {x: -37.17272, y: 11.043287}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1001 &442934520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -439,6 +494,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2826241e65d61d848bc6a69ba1c44829, type: 3}
+--- !u!1 &621941550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621941551}
+  m_Layer: 0
+  m_Name: SpawnInitialPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &621941551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621941550}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.4, y: -18.24, z: 0}
+  m_LocalScale: {x: 0.9, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &699552856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1809,7 +1895,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 967926674755716686, guid: ead0e769890006344b0e30f0c059ea5d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 378047329}
   m_SourcePrefab: {fileID: 100100000, guid: ead0e769890006344b0e30f0c059ea5d, type: 3}
 --- !u!1001 &7175017134660317272
 PrefabInstance:
@@ -1902,3 +1991,4 @@ SceneRoots:
   - {fileID: 1052099472}
   - {fileID: 99881922}
   - {fileID: 1904170411}
+  - {fileID: 621941551}

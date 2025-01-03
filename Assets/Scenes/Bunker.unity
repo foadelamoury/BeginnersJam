@@ -973,6 +973,37 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 2218912715426308522, guid: 66d2bf5b3cc23de4bbe6a3256e6975e5, type: 3}
   m_PrefabInstance: {fileID: 4356032762050609284}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1739297443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1739297444}
+  m_Layer: 0
+  m_Name: SpawnLocationInitial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1739297444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739297443}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.98, y: 0.25, z: 0.07372137}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2102588970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1057,6 +1088,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7089004744188646112, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
+      propertyPath: initialPositionObject
+      value: 
+      objectReference: {fileID: 1739297443}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1324,3 +1359,4 @@ SceneRoots:
   - {fileID: 1006045065}
   - {fileID: 1280231307}
   - {fileID: 1084476605}
+  - {fileID: 1739297444}
