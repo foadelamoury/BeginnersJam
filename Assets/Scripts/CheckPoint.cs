@@ -26,8 +26,6 @@ public class Checkpoint : MonoBehaviour
     private void ActivateCheckpoint(GameObject player)
     {
         isActive = true;
-
-        // Enable the flag's SpriteRenderer
         if (flag != null)
         {
             flag.GetComponent<SpriteRenderer>().enabled = true;

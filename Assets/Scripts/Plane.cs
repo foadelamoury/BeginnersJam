@@ -16,7 +16,7 @@ public class Plane : MonoBehaviour
     {
         // Start the rocket throwing coroutine
         StartCoroutine(ThrowRockets());
-        //AudioManager.Instance.PlaySFX(startSound);
+        AudioManager.Instance.PlaySFX(startSound);
     }
 
     void Update()

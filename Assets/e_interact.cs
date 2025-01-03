@@ -2,12 +2,27 @@ using UnityEngine;
 
 public class ObjectToggler : MonoBehaviour
 {
+    [SerializeField] private GameObject box;
+    [SerializeField] private AudioClip sound;
+    private bool isInRange = false;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        isInRange = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        isInRange = false;
+    }
+
+    private void Update()
+    {
+        if (isInRange && Input.GetKeyDown(KeyCode.E))
         {
             gameObject.SetActive(false);
-            
+            box.SetActive(true);
+            AudioManager.Instance.PlaySFX(sound);
         }
     }
 }
