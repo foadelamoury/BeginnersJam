@@ -3,6 +3,7 @@ using UnityEngine;
 public class ObjectToggler : MonoBehaviour
 {
     [SerializeField] private GameObject box;
+    [SerializeField] private AudioClip sound;
     private bool isInRange = false;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -21,6 +22,7 @@ public class ObjectToggler : MonoBehaviour
         {
             gameObject.SetActive(false);
             box.SetActive(true);
+            AudioManager.Instance.PlaySFX(sound);
         }
     }
 }

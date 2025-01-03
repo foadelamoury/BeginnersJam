@@ -8,6 +8,7 @@ public class PickUpItem : MonoBehaviour
 
     public Canvas pickUpCanvas;
     private bool picked = false;
+    [SerializeField] public AudioClip Sound;
     void Update()
     {
         // Check if the player presses 'E' while in range
@@ -17,6 +18,7 @@ public class PickUpItem : MonoBehaviour
             PickUp();
             pickUpCanvas.gameObject.SetActive(false);
             picked = true;
+            AudioManager.Instance.PlaySFX(Sound);
             
         }
     }

@@ -236,6 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   box: {fileID: 1280231303}
+  sound: {fileID: 8300000, guid: b05782156e5ec5445972b99a1577a07d, type: 3}
 --- !u!212 &1006045064
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -698,7 +699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &1280231305
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -983,6 +984,14 @@ PrefabInstance:
     - target: {fileID: 1667415693461333323, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
       propertyPath: m_Name
       value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982139818228089807, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
+      propertyPath: m_text
+      value: Press "E" to pick up Dog Tag
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107302760843444193, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -529.4
       objectReference: {fileID: 0}
     - target: {fileID: 5510964911051172969, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
       propertyPath: ladderTriggerCollider

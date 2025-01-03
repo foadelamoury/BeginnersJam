@@ -148,4 +148,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpCanvas: {fileID: 0}
-  tagTaken: {fileID: 0}
+  Sound: {fileID: 8300000, guid: d0dafc5020b14de4799a1176ade21dc5, type: 3}
