@@ -1,10 +1,82 @@
 fileFormatVersion: 2
-guid: ac18eda9898675246b957b7963fe2e71
+guid: 8a0719d6f1074594bbff479086809a90
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8476246792784735257
-    second: lastBunker_0
+      213: 5268187495526859981
+    second: tut_0
+  - first:
+      213: 1760660402950515922
+    second: tut_1
+  - first:
+      213: -68090980661940792
+    second: tut_2
+  - first:
+      213: 7404470831791659195
+    second: tut_3
+  - first:
+      213: 8869697126157683375
+    second: tut_4
+  - first:
+      213: 3845985252328670921
+    second: tut_5
+  - first:
+      213: -5951674271509990955
+    second: tut_6
+  - first:
+      213: 5417173719663526468
+    second: tut_7
+  - first:
+      213: 6315440190732362512
+    second: tut_8
+  - first:
+      213: -2873186491859258793
+    second: tut_9
+  - first:
+      213: 4035431707723422893
+    second: tut_10
+  - first:
+      213: -5149097829973889173
+    second: tut_11
+  - first:
+      213: -4909102865863741545
+    second: tut_12
+  - first:
+      213: -4301174240307686598
+    second: tut_13
+  - first:
+      213: -2778532950520635154
+    second: tut_14
+  - first:
+      213: 7264898823027083630
+    second: tut_15
+  - first:
+      213: -3579353828803920128
+    second: tut_16
+  - first:
+      213: -3026767249206595000
+    second: tut_17
+  - first:
+      213: 4087672132902995193
+    second: tut_18
+  - first:
+      213: 4858877421441086216
+    second: tut_19
+  - first:
+      213: 3095253497259259008
+    second: tut_20
+  - first:
+      213: 4750510731132195997
+    second: tut_21
+  - first:
+      213: -373881135087620593
+    second: tut_22
+  - first:
+      213: -6408554968430400201
+    second: tut_23
+  - first:
+      213: -4182329034664181356
+    second: tut_24
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +198,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lastBunker_0
+      name: tut_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 2560
-        height: 1440
+        y: 3
+        width: 333
+        height: 302
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e3958773725e5a80800000000000000
-      internalID: -8476246792784735257
+      spriteID: dc488097d9c5c1940800000000000000
+      internalID: 5268187495526859981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tut_8
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 238
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013e3d09463f4a750800000000000000
+      internalID: 6315440190732362512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tut_9
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 0
+        width: 353
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7523743cb146028d0800000000000000
+      internalID: -2873186491859258793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tut_24
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 0
+        width: 436
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4910a03e6e165f5c0800000000000000
+      internalID: -4182329034664181356
       vertices: []
       indices: 
       edges: []
@@ -151,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d901a3bd50fef4340931cc351750a259
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +299,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      lastBunker_0: -8476246792784735257
+      tut_0: 5268187495526859981
+      tut_10: 4035431707723422893
+      tut_11: -5149097829973889173
+      tut_24: -4182329034664181356
+      tut_4: 8869697126157683375
+      tut_8: 6315440190732362512
+      tut_9: -2873186491859258793
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
