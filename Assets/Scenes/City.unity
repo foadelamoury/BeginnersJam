@@ -306,6 +306,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 3463194544839957518, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: e4d738c674d5daa49956d34da9fb2814, type: 3}
+    - target: {fileID: 3463194544839957518, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e4d738c674d5daa49956d34da9fb2814, type: 3}
+    - target: {fileID: 3463194544839957518, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5510964911051172969, guid: be6ade5c47746624fb3679c21bb52ee9, type: 3}
       propertyPath: ladderTriggerCollider
       value: 

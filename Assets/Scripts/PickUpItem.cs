@@ -8,7 +8,7 @@ public class PickUpItem : MonoBehaviour
 {
     private bool isPlayerInRange = false;
 
-
+    public AudioClip tagTaken;
     public TextMeshProUGUI scoreText;
 
     public Canvas pickUpCanvas;
@@ -70,10 +70,11 @@ public class PickUpItem : MonoBehaviour
         //gameObject.SetActive(false);
 
         int currentScore = PlayerPrefs.GetInt("PlayerScore", 0) + 1;
+        AudioManager.Instance.PlaySFX(tagTaken);
+
         PlayerPrefs.SetInt("PlayerScore", currentScore);
         PlayerPrefs.Save();
         scoreText.text="Dog tags collected : " + PlayerPrefs.GetInt("PlayerScore").ToString();
-        
         // Alternatively, you could notify the player script or add to inventory
     }
 }
