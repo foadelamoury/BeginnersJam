@@ -610,6 +610,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -5157438025226744072, guid: 95e08fed72e667b4f82700c1856015b1, type: 3}
+      propertyPath: Sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c9c45a89e73d12429c3657815e1c808, type: 3}
+    - target: {fileID: -5157438025226744072, guid: 95e08fed72e667b4f82700c1856015b1, type: 3}
       propertyPath: pickUpCanvas
       value: 
       objectReference: {fileID: 902297264}
