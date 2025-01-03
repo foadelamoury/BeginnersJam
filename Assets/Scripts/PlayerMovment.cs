@@ -77,10 +77,11 @@ public class PlayerMovment : MonoBehaviour
         {
             animator.SetFloat("Speed", 8.0f);
         }
-        if(killPlayer){
+        if (killPlayer)
+        {
             Die();
         }
-        
+
     }
 
 

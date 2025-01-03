@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class PlaneSpawner : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class PlaneSpawner : MonoBehaviour
     public float endX = 100f; // Plane's X end boundary
     public float planeSpeed = 5f; // Plane's speed
 
-    void Start()
+    
+    void OnEnable()
     {
         StartCoroutine(SpawnPlane());
     }

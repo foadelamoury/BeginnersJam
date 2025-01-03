@@ -1,10 +1,26 @@
 using UnityEngine;
 
-public class startPlans : MonoBehaviour
+public class StartPlanes : MonoBehaviour
 {
-    [SerializeField] GameObject planespwner;
-    private void OnTriggerEnter2D(Collider2D collision)
+    [SerializeField] private GameObject planeSpawner;
+
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        planespwner.SetActive(true);
+        if (collision.CompareTag("Player")) 
+        {
+            if (planeSpawner != null) 
+            {
+                planeSpawner.SetActive(true);
+                 
+            }
+            else
+            {
+                Debug.LogWarning("PlaneSpawner is not assigned in the Inspector!");
+            }
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        planeSpawner.SetActive(false);
     }
 }

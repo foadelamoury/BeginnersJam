@@ -7,6 +7,9 @@ TagManager:
   - Crate
   - Ladder
   - Fence
+  - Ground
+  - startplanes
+  - plane
   layers:
   - Default
   - TransparentFX
@@ -67,6 +70,9 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 4190755871
+    locked: 0
+  - name: soldier
+    uniqueID: 4229030633
     locked: 0
   m_RenderingLayers:
   - Default
