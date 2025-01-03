@@ -52,10 +52,5 @@ public class PickUpItem : MonoBehaviour
     {
         // Logic for when the object is picked up
         Debug.Log($"{gameObject.name} picked up!");
-
-        // Example: Deactivate the object
-        //gameObject.SetActive(false);
-
-        // Alternatively, you could notify the player script or add to inventory
     }
 }
