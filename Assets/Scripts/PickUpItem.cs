@@ -1,13 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class PickUpItem : MonoBehaviour
 {
     private bool isPlayerInRange = false;
 
+
+    public TextMeshProUGUI scoreText;
+
     public Canvas pickUpCanvas;
     private bool picked = false;
+
+    void Start()
+    {
+        if (PlayerPrefs.GetInt("PlayerScore") == 0)
+        {
+            scoreText.text = "Dog tags collected : " + PlayerPrefs.GetInt("PlayerScore").ToString();
+
+        }
+    }
+
     void Update()
     {
         // Check if the player presses 'E' while in range
@@ -54,6 +69,11 @@ public class PickUpItem : MonoBehaviour
         // Example: Deactivate the object
         //gameObject.SetActive(false);
 
+        int currentScore = PlayerPrefs.GetInt("PlayerScore", 0) + 1;
+        PlayerPrefs.SetInt("PlayerScore", currentScore);
+        PlayerPrefs.Save();
+        scoreText.text="Dog tags collected : " + PlayerPrefs.GetInt("PlayerScore").ToString();
+        
         // Alternatively, you could notify the player script or add to inventory
     }
 }
