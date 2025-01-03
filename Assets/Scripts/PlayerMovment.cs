@@ -33,7 +33,7 @@ public class PlayerMovment : MonoBehaviour
         if (transform.localScale.x < 0)
             if (pickUpScale.x > 0)
                 pickUpScale = new Vector3(-pickUpScale.x, pickUpScale.y, pickUpScale.z);
-            else if (transform.localScale.x > 0)
+        if (transform.localScale.x > 0)
                 if (pickUpScale.x < 0)
                     pickUpScale = new Vector3(-pickUpScale.x, pickUpScale.y, pickUpScale.z);
 
