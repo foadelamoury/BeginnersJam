@@ -106,3 +106,4 @@ MonoBehaviour:
   fireRate: 2
   rocketsToThrow: 3
   rocketOffset: {x: 2, y: 0, z: 0}
+  startSound: {fileID: 8300000, guid: 2a1b237f8d5db6547baf605425392708, type: 3}

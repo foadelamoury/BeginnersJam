@@ -106,6 +106,8 @@ MonoBehaviour:
   speed: 3
   lifetime: 20
   rocketAnimator: {fileID: 7743604474704399046}
+  startSound: {fileID: 8300000, guid: 693bd327bf69afc4aa51fc1bf588be0e, type: 3}
+  collisionSound: {fileID: 8300000, guid: 46214b8d04de9bd4d9ef837a3b2d56ae, type: 3}
 --- !u!70 &2045168682407028943
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
