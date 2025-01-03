@@ -129,13 +129,13 @@ TextureImporter:
       name: Main_menu_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
-        width: 1920
+        width: 1918
         height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 03a5b56d4fcb6564d85f03655d60b7ef
     internalID: 0
     vertices: []
     indices: 

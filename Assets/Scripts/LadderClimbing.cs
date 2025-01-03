@@ -44,7 +44,7 @@ public class LadderClimbing : MonoBehaviour
             // Lock x-axis movement by directly setting position
             rb.linearVelocity = new Vector2(0, vertical * climbSpeed);
             transform.position = new Vector3(lockedXPosition, transform.position.y, transform.position.z);
-            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            //transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             // Pause the animation if no vertical input
             if (Mathf.Approximately(vertical, 0f))
             {
