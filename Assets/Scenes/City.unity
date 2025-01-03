@@ -1399,9 +1399,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 782092271}
     m_Modifications:
     - target: {fileID: -8284336436520474311, guid: 318a2318cea3df8429ec3aae874c4c1b, type: 3}
+      propertyPath: Sound
+      value: 
+      objectReference: {fileID: 8300000, guid: e4d738c674d5daa49956d34da9fb2814, type: 3}
+    - target: {fileID: -8284336436520474311, guid: 318a2318cea3df8429ec3aae874c4c1b, type: 3}
       propertyPath: tagTaken
       value: 
       objectReference: {fileID: 8300000, guid: d0dafc5020b14de4799a1176ade21dc5, type: 3}
+    - target: {fileID: -8284336436520474311, guid: 318a2318cea3df8429ec3aae874c4c1b, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1792064583}
     - target: {fileID: -8284336436520474311, guid: 318a2318cea3df8429ec3aae874c4c1b, type: 3}
       propertyPath: pickUpCanvas
       value: 
@@ -1646,7 +1654,7 @@ Transform:
   m_GameObject: {fileID: 1469549444}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.52, y: 7.75, z: 10}
+  m_LocalPosition: {x: -20, y: 7.75, z: 10}
   m_LocalScale: {x: 0.6688, y: 0.6688, z: 0.6688}
   m_ConstrainProportionsScale: 1
   m_Children:
