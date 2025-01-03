@@ -164,6 +164,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -510,7 +536,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      explosion_08_0: -2304149409243000073
+      explosion_08_1: -7123792761351524376
+      explosion_08_10: -5433065019834771157
+      explosion_08_11: -4759131928753753904
+      explosion_08_12: -5863162362833572476
+      explosion_08_13: 2400497378732300738
+      explosion_08_14: -4669014979184346283
+      explosion_08_2: 662897110790082449
+      explosion_08_3: 5468567566079977537
+      explosion_08_4: -5640039145042640002
+      explosion_08_5: 7325956516044572912
+      explosion_08_6: -8042148379289677127
+      explosion_08_7: -3928189137006522234
+      explosion_08_8: -8225339065032857970
+      explosion_08_9: -5412910913239417972
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
