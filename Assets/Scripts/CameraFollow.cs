@@ -11,6 +11,12 @@ public class CameraFollow : MonoBehaviour
     void Start()
     {
         CalculateCameraBounds();
+        if (PlayerPrefs.GetInt("PlayerScore") == 0)
+        {
+            PlayerPrefs.SetInt("PlayerScore", 0);
+            PlayerPrefs.Save();
+        }
+
     }
 
     void LateUpdate()

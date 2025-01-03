@@ -16,13 +16,21 @@ public class PlayerMovment : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Vector3 pickUpScale;
     private Vector3 currentCheckpoint; // To store the current checkpoint position
+    [SerializeField] private GameObject initialPositionObject;
     private Vector3 initialPosition; // Stores the game's initial position
     [SerializeField] bool killPlayer = false;
     void Start()
     {
         pickUpScale = pickUpText.gameObject.transform.localScale;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        initialPosition = new Vector3(10.899930953979493f, -19.441625595092775f, 0f);
+        if (initialPositionObject != null)
+        {
+            initialPosition = initialPositionObject.transform.position;
+        }
+        else
+        {
+            Debug.LogError("Initial Position Object is not assigned in the Inspector!");
+        }
         currentCheckpoint = initialPosition;
     }
 
@@ -76,6 +84,13 @@ public class PlayerMovment : MonoBehaviour
         {
             animator.SetFloat("Speed", 8.0f);
         }
+        
+        if (transform.position.y < -50)
+        {
+            Debug.Log("Player fell below -50. Respawning...");
+            Die();
+        }
+        
         if (killPlayer)
         {
             Die();
