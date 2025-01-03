@@ -394,6 +394,7 @@ MonoBehaviour:
     m_Bits: 128
   offset: 1.5
   checkRadius: 1.5
+  initialPositionObject: {fileID: 0}
   killPlayer: 0
 --- !u!50 &1925318232522142212
 Rigidbody2D:
@@ -471,7 +472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4bb4c536ba4f74480be965d40320d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  climbSpeed: 7
+  climbSpeed: 10
   bodyCollider: {fileID: 4195181511962917294}
   ladderTriggerCollider: {fileID: 0}
 --- !u!70 &5058707920322095062
