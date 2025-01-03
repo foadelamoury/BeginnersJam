@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PickUpItem : MonoBehaviour
 {
@@ -9,6 +10,21 @@ public class PickUpItem : MonoBehaviour
     public Canvas pickUpCanvas;
     private bool picked = false;
     [SerializeField] public AudioClip Sound;
+    public TextMeshProUGUI scoreText;
+    void Start()
+    {
+        if (PlayerPrefs.GetInt("PlayerScore") == 0)
+        {
+            scoreText.text = "0";
+
+        }
+        else
+        {
+                scoreText.text = PlayerPrefs.GetInt("PlayerScore").ToString();
+
+        }
+    }
+
     void Update()
     {
         // Check if the player presses 'E' while in range
@@ -18,7 +34,7 @@ public class PickUpItem : MonoBehaviour
             PickUp();
             pickUpCanvas.gameObject.SetActive(false);
             picked = true;
-            AudioManager.Instance.PlaySFX(Sound);
+       
             
         }
     }
@@ -52,10 +68,14 @@ public class PickUpItem : MonoBehaviour
     {
         // Logic for when the object is picked up
         Debug.Log($"{gameObject.name} picked up!");
-
+        AudioManager.Instance.PlaySFX(Sound);
         // Example: Deactivate the object
-        //gameObject.SetActive(false);
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        int currentScore = PlayerPrefs.GetInt("PlayerScore") + 1;
+        PlayerPrefs.SetInt("PlayerScore",   currentScore);
+        PlayerPrefs.Save();
+        scoreText.text = PlayerPrefs.GetInt("PlayerScore").ToString();
 
-        // Alternatively, you could notify the player script or add to inventory
+
     }
 }
