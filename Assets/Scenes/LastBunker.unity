@@ -202,6 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 498361149}
   - component: {fileID: 498361150}
+  - component: {fileID: 498361151}
   m_Layer: 8
   m_Name: wall
   m_TagString: Untagged
@@ -270,6 +271,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.6089268, y: 11.876259}
   m_EdgeRadius: 0
+--- !u!50 &498361151
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498361148}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 33d6fefcc4e324c4fa4626a174048d13, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &848236126
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,6 +521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1515105883}
   - component: {fileID: 1515105884}
+  - component: {fileID: 1515105885}
   m_Layer: 8
   m_Name: wall (1)
   m_TagString: Untagged
@@ -561,6 +590,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.6089268, y: 11.876259}
   m_EdgeRadius: 0
+--- !u!50 &1515105885
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515105882}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 33d6fefcc4e324c4fa4626a174048d13, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1749534085
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,7 +678,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8476246792784735257, guid: 3ec2f6300a57ae04fbe7bf3f80aff401, type: 3}
+  m_Sprite: {fileID: -8476246792784735257, guid: ac18eda9898675246b957b7963fe2e71, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
