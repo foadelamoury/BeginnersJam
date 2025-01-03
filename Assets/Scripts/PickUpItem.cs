@@ -7,7 +7,7 @@ public class PickUpItem : MonoBehaviour
     private bool isPlayerInRange = false;
 
     public Canvas pickUpCanvas;
-
+    private bool picked = false;
     void Update()
     {
         // Check if the player presses 'E' while in range
@@ -16,7 +16,8 @@ public class PickUpItem : MonoBehaviour
 
             PickUp();
             pickUpCanvas.gameObject.SetActive(false);
-
+            picked = true;
+            
         }
     }
 
@@ -26,7 +27,11 @@ public class PickUpItem : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerInRange = true;
+            if (picked == false)
+            {
             pickUpCanvas.gameObject.SetActive(true);
+
+            }
         }
     }
 
@@ -47,7 +52,7 @@ public class PickUpItem : MonoBehaviour
         Debug.Log($"{gameObject.name} picked up!");
 
         // Example: Deactivate the object
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
 
         // Alternatively, you could notify the player script or add to inventory
     }

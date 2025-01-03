@@ -34,15 +34,23 @@ public class Rocket : MonoBehaviour
         // Play the collision sound
         AudioManager.Instance.PlaySFX(collisionSound);
 
-        StartCoroutine(HandleCollision(collider));
 
-        if (collider.CompareTag("Player"))
+        if (collider.CompareTag("startplanes")|| collider.CompareTag("plane"))
         {
-            PlayerMovment player = collider.GetComponent<PlayerMovment>();
-            if (player != null)
+            Debug.Log("hi");
+        }
+        else 
+        {
+            StartCoroutine(HandleCollision(collider));
+            if(collider.CompareTag("Player"))
             {
-                player.Die();
+                PlayerMovment player = collider.GetComponent<PlayerMovment>();
+                if (player != null)
+                {
+                    player.Die();
+                }
             }
+            
         }
     }
 

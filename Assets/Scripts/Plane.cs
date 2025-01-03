@@ -8,7 +8,7 @@ public class Plane : MonoBehaviour
     public GameObject rocketPrefab;  // Assign the rocket prefab in the Inspector
     public float fireRate = 0.5f;      // Time between rocket fires (shortened for testing)
     public int rocketsToThrow = 3;   // Number of rockets to throw
-    public Vector3 rocketOffset = new Vector3(2f, 0f, 0f); // Offset for where rockets spawn
+    public Vector3 rocketOffset = new Vector3(2f, 12f, 0f); // Offset for where rockets spawn
     public AudioClip startSound;
     private int rocketsThrown = 0;
 
