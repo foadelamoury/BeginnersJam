@@ -22,7 +22,7 @@ public class Rocket : MonoBehaviour
         }
 
         // Initialize the AudioSource and play the start sound
-        AudioManager.Instance.PlaySFX(startSound);
+        //AudioManager.Instance.PlaySFX(startSound);
 
         Destroy(gameObject, lifetime);
     }
@@ -32,7 +32,7 @@ public class Rocket : MonoBehaviour
         Debug.Log("Trigger entered with: " + collider.gameObject.name);
 
         // Play the collision sound
-        AudioManager.Instance.PlaySFX(collisionSound);
+        //AudioManager.Instance.PlaySFX(collisionSound);
 
 
         if (collider.CompareTag("startplanes")|| collider.CompareTag("plane"))

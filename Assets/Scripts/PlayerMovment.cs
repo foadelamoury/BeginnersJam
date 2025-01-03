@@ -3,13 +3,12 @@ using TMPro;
 
 public class PlayerMovment : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 8f;
     public TextMeshProUGUI pickUpText;
     public float jumpForce = 10f;
     public Animator animator;
     public Rigidbody2D rb;
     public LayerMask groundLayer;
-    public float stairsClimbSpeed = 3f;
     [SerializeField] float offset = 1.5f;
     [SerializeField] float checkRadius = 0.5f;
     private bool isGrounded = false;
